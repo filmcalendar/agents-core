@@ -1,0 +1,627 @@
+{
+  "entities": {
+    "venues": {
+      "583d46630656323d7e2dbb81a66a9928": {
+        "name": "The Castle Cinema",
+        "url": "https://thecastlecinema.com",
+        "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+        "email": "hello@thecastlecinema.com",
+        "ref": "the-castle-cinema"
+      }
+    },
+    "films": {
+      "coraline": {
+        "title": "Coraline",
+        "director": ["Henry Selick"],
+        "cast": ["Dakota Fanning", "Teri Hatcher", "John Hodgman"],
+        "year": 2009
+      },
+      "wolfwalkers": {
+        "title": "Wolfwalkers",
+        "director": ["Ross Stewart", "Tomm Moore"],
+        "cast": ["Honor Kneafsey", "Sean Bean", "Eva Whittaker"],
+        "year": 2020
+      },
+      "kirikou-and-the-sorceress": {
+        "title": "Kirikou and the Sorceress",
+        "director": ["Michel Ocelot"],
+        "year": 1998
+      },
+      "labyrinth": {
+        "title": "Labyrinth",
+        "director": ["Jim Henson"],
+        "cast": ["David Bowie", "Jennifer Connelly"],
+        "year": 1986
+      },
+      "la-belle-et-la-bete": {
+        "title": "La Belle et la Bete",
+        "director": ["Jean Cocteau", "Rene Clement"],
+        "cast": ["Jean Marais", "Josette Day"],
+        "year": 1946
+      },
+      "black-swan": {
+        "title": "Black Swan",
+        "director": ["Darren Aronofsky"],
+        "cast": ["Natalie Portman", "Mila Kunis", "Vincent Cassel"],
+        "year": 2010
+      },
+      "pan-s-labyrinth": {
+        "title": "Pan's Labyrinth",
+        "director": ["Guillermo Del Toro"],
+        "cast": ["Ariadna Gil", "Ivana Baquero", "Sergi L", "pez"],
+        "year": 2006
+      },
+      "e-t-the-extra-terrestrial": {
+        "title": "E.T. the Extra-Terrestrial",
+        "director": ["Steven Spielberg"],
+        "cast": [
+          "Dee Wallace",
+          "Henry Thomas",
+          "Peter Coyote",
+          "Robert MacNaughton",
+          "Drew Barrymore"
+        ],
+        "year": 1982
+      },
+      "elf": {
+        "title": "Elf",
+        "director": ["Jon Favreau"],
+        "cast": [
+          "Will Ferrell",
+          "James Caan",
+          "Bob Newhart",
+          "Zooey Deschanel"
+        ],
+        "year": 2003
+      },
+      "the-snowman": { "title": "The Snowman", "year": 1982 },
+      "three-wishes-for-cinderella": {
+        "title": "Three Wishes For Cinderella",
+        "director": ["clav Vorl", "cek"],
+        "cast": [
+          "Libuse Safr",
+          "nkov",
+          "Pavel Tr",
+          "vn",
+          "cek",
+          "Carola Braunbock"
+        ],
+        "year": 1973
+      },
+      "rare-exports": {
+        "title": "Rare Exports",
+        "director": ["Jalmari Helander"],
+        "cast": ["Jorma Tommila", "Onni Tommila", "Peeter Jakobi"],
+        "year": 2010
+      },
+      "the-muppet-christmas-carol": {
+        "title": "The Muppet Christmas Carol",
+        "director": ["Brian Henson"],
+        "cast": ["Dave Goelz", "Michael Caine", "Steve Whitmire"],
+        "year": 1992
+      },
+      "it-s-a-wonderful-life": {
+        "title": "It's a Wonderful Life",
+        "director": ["Frank Capra"],
+        "cast": ["James Stewart", "Donna Reed", "Lionel Barrymore"],
+        "year": 1946
+      },
+      "frozen-ii": {
+        "title": "Frozen II",
+        "director": ["Chris Buck", "Jennifer Lee"],
+        "cast": ["Kristen Bell", "Jason Ritter", "Evan Rachel Wood"],
+        "year": 2019
+      },
+      "the-godfather": {
+        "title": "The Godfather",
+        "director": ["Francis Ford Coppola"],
+        "cast": ["Marlon Brando", "Al Pacino", "James Caan"],
+        "year": 1972
+      }
+    },
+    "sessions": {
+      "0cbc2c03f1bb42bc7049c0054ef9c477": {
+        "dateTime": "2020-12-05T11:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141362/",
+        "attributes": []
+      },
+      "ce26f5ae775f0d39e59c6f7a0ec518bb": {
+        "dateTime": "2020-12-23T13:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141419/",
+        "attributes": []
+      },
+      "b7c10b3ea8ecb28a9cb82c711afec20f": {
+        "dateTime": "2020-12-28T13:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141429/",
+        "attributes": []
+      },
+      "fdf4b77a13938b5d05c1a60951c94466": {
+        "dateTime": "2020-12-05T14:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142089/",
+        "attributes": ["q-and-a"]
+      },
+      "f8b4892635d8de2cd9777b94db2251eb": {
+        "dateTime": "2020-12-11T16:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142102/",
+        "attributes": []
+      },
+      "4e1819df35a7d9a6e067cb5d270e3710": {
+        "dateTime": "2020-12-07T16:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142097/",
+        "attributes": []
+      },
+      "b0b0be5818bf0f79fc66a63ba2e03955": {
+        "dateTime": "2020-12-06T11:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142091/",
+        "attributes": []
+      },
+      "b866cc2af201a8a8670680fe29e17456": {
+        "dateTime": "2020-12-08T11:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142099/",
+        "attributes": []
+      },
+      "8b342ab3d894ba1a5bdbf249031e664d": {
+        "dateTime": "2020-12-13T11:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142104/",
+        "attributes": []
+      },
+      "4b8cf4d53801f49bd2cc3ebb96db2ecf": {
+        "dateTime": "2020-12-06T11:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141366/",
+        "attributes": []
+      },
+      "f61dc15e954f7bdd7b0266a2082909ab": {
+        "dateTime": "2020-12-28T11:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141427/",
+        "attributes": []
+      },
+      "4efb141b25c0daa8fbfea6f30f3b4d33": {
+        "dateTime": "2020-12-12T11:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141384/",
+        "attributes": []
+      },
+      "d89a2bb88ab0af951a91a445cde5455b": {
+        "dateTime": "2020-12-22T11:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142082/",
+        "attributes": []
+      },
+      "8f965b532b02121fc321ced779cfa54a": {
+        "dateTime": "2020-12-08T13:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141372/",
+        "attributes": []
+      },
+      "530163be2c875ca43846dc0ec716cee2": {
+        "dateTime": "2020-12-15T18:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141395/",
+        "attributes": []
+      },
+      "af52e8d96bb94f8ff3566c013148966a": {
+        "dateTime": "2020-12-06T13:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141368/",
+        "attributes": []
+      },
+      "5270d4fcd863112be53349796af0f6d7": {
+        "dateTime": "2020-12-28T15:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141431/",
+        "attributes": []
+      },
+      "13a2434905ae1e2f3e944711b3352919": {
+        "dateTime": "2020-12-07T18:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141370/",
+        "attributes": []
+      },
+      "f8fa88ad7c91abbd97653fbc176a8ba6": {
+        "dateTime": "2020-12-19T16:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141403/",
+        "attributes": []
+      },
+      "ab2ad88fe04cfcbe67bbbd664dd88109": {
+        "dateTime": "2020-12-10T14:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141378/",
+        "attributes": []
+      },
+      "f1f1058bd95955eaffa3743274101336": {
+        "dateTime": "2020-12-11T16:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141380/",
+        "attributes": []
+      },
+      "f80d4db2467a556d04b15cad2c66e783": {
+        "dateTime": "2020-12-08T21:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141374/",
+        "attributes": []
+      },
+      "6986311e62f0ba69920a789323cb8d23": {
+        "dateTime": "2020-12-28T21:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141435/",
+        "attributes": []
+      },
+      "6ba3d2169a4b786461d35c2fdff6dad4": {
+        "dateTime": "2020-12-12T16:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141386/",
+        "attributes": []
+      },
+      "4c5e236f6088c2ccb98d8f6a0cafd65f": {
+        "dateTime": "2020-12-09T13:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141376/",
+        "attributes": []
+      },
+      "530d25b7468d22148df2950b78d17994": {
+        "dateTime": "2020-12-28T18:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141433/",
+        "attributes": []
+      },
+      "d152bc9dd1277f306d83f5f96cebd02c": {
+        "dateTime": "2020-12-10T19:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141023/",
+        "attributes": ["16mm"]
+      },
+      "7a90011143974d8f9b8846e32fd84bb7": {
+        "dateTime": "2020-12-17T19:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141027/",
+        "attributes": ["16mm"]
+      },
+      "7adeb241ff66b2de041e2aee774eeda4": {
+        "dateTime": "2020-12-20T15:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141031/",
+        "attributes": ["16mm"]
+      },
+      "3426ff80d78c75335faec33b5bd5c08b": {
+        "dateTime": "2020-12-18T16:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141988/",
+        "attributes": []
+      },
+      "7cf29c6f2647f2be520f4b7e1199e8fe": {
+        "dateTime": "2020-12-24T11:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141421/",
+        "attributes": []
+      },
+      "93c8b8c07de8a86d50cd9d0449527dd8": {
+        "dateTime": "2020-12-23T11:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141417/",
+        "attributes": []
+      },
+      "4f2e59ff4361cd804ec647ecac8f3f00": {
+        "dateTime": "2020-12-12T13:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142066/",
+        "attributes": []
+      },
+      "8821338ef3d6bb68afaa6524ad343bc7": {
+        "dateTime": "2020-12-21T18:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141411/",
+        "attributes": []
+      },
+      "dd855cb1afb58efa6f7bd2f7a4729099": {
+        "dateTime": "2020-12-21T16:10:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3143123/",
+        "attributes": []
+      },
+      "e400d63d6434175144e0722fd4529dd9": {
+        "dateTime": "2020-12-22T19:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141033/",
+        "attributes": ["16mm"]
+      },
+      "2e4a1bc3f34a8267da050017b36efe91": {
+        "dateTime": "2020-12-20T14:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141029/",
+        "attributes": ["16mm"]
+      },
+      "a8c19609c37de5981a14b2a54e6be3d6": {
+        "dateTime": "2020-12-13T11:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141025/",
+        "attributes": ["16mm"]
+      },
+      "ed849ea8c4f73d5fe0b41fd79e0c0f27": {
+        "dateTime": "2020-12-16T19:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3092187/",
+        "attributes": []
+      },
+      "1394712ade99f0914de8a33f7532d5f2": {
+        "dateTime": "2020-12-13T13:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3092150/",
+        "attributes": []
+      },
+      "2927a70051d7d14dacef8c1a0bcbcee3": {
+        "dateTime": "2020-12-15T14:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141393/",
+        "attributes": []
+      },
+      "91fa665c6ff2bd9fb8fe59f04b14e3a5": {
+        "dateTime": "2020-12-13T15:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141388/",
+        "attributes": []
+      },
+      "f5835084c370d8d67a38a67c2477b8f9": {
+        "dateTime": "2020-12-21T21:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141413/",
+        "attributes": []
+      },
+      "044d4365455c50c5c4b420a1f65d52c7": {
+        "dateTime": "2020-12-21T11:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141407/",
+        "attributes": []
+      },
+      "a27988a743ec31257a05dd374f3f9700": {
+        "dateTime": "2020-12-19T11:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141401/",
+        "attributes": []
+      },
+      "7925c14e639f675a51ea3d047fb20041": {
+        "dateTime": "2020-12-24T14:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141423/",
+        "attributes": []
+      },
+      "b0b33569763d057712e1ea4852dfed40": {
+        "dateTime": "2020-12-14T18:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142075/",
+        "attributes": []
+      },
+      "c32f6e5c5ed8a07d09d5ff614a734e2e": {
+        "dateTime": "2020-12-14T21:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141391/",
+        "attributes": []
+      },
+      "18ba5706c3b6d606a1ee33910fb4ac46": {
+        "dateTime": "2020-12-22T13:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141415/",
+        "attributes": []
+      },
+      "5ccf958d4dede2eafcc13d0d7076f7d9": {
+        "dateTime": "2020-12-16T13:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141397/",
+        "attributes": []
+      },
+      "bff150c2f023c4ed1fd80b8bad8db603": {
+        "dateTime": "2020-12-17T11:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141399/",
+        "attributes": []
+      },
+      "739892f1112d70f57eb7f5572f56bd94": {
+        "dateTime": "2020-12-19T13:10:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3142078/",
+        "attributes": []
+      },
+      "1c7e4073fe7a1d2a0cd538d19ed91f59": {
+        "dateTime": "2020-12-24T16:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141425/",
+        "attributes": []
+      },
+      "098e0d40461023549a02e58a5d1eb4f1": {
+        "dateTime": "2020-12-21T13:45:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141409/",
+        "attributes": []
+      },
+      "30027040c5df32c126bc63c6711a57ae": {
+        "dateTime": "2020-12-20T11:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3141405/",
+        "attributes": []
+      },
+      "1099e0e88669f49ab15c564217eb17fc": {
+        "dateTime": "2020-12-24T11:15:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3143125/",
+        "attributes": []
+      },
+      "6c90ed7c5d9d5c2ed6295bc9968fa595": {
+        "dateTime": "2021-01-31T12:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3109236/",
+        "attributes": ["16mm"]
+      },
+      "efeb36c0ede9d6da012368461c79570b": {
+        "dateTime": "2021-01-24T12:30:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3109232/",
+        "attributes": ["16mm"]
+      },
+      "52b2077573380300130ec4dbc34aca58": {
+        "dateTime": "2021-01-28T19:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3109234/",
+        "attributes": ["16mm"]
+      },
+      "87760392f54d258c6451f73c3c40534a": {
+        "dateTime": "2021-01-21T19:00:00.000Z",
+        "bookingLink": "https://thecastlecinema.com/bookings/3109230/",
+        "attributes": ["16mm"]
+      }
+    },
+    "pages": {
+      "bd57b9b92ed3da4c64b56d26072d23aa": {
+        "url": "https://thecastlecinema.com/programme/3141361/coraline/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["coraline"],
+        "sessions": [
+          "0cbc2c03f1bb42bc7049c0054ef9c477",
+          "ce26f5ae775f0d39e59c6f7a0ec518bb",
+          "b7c10b3ea8ecb28a9cb82c711afec20f"
+        ]
+      },
+      "01d89ee84ea421ad8dff2871fefc5ed3": {
+        "url": "https://thecastlecinema.com/programme/3142081/wolfwalkers-q-a/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["wolfwalkers"],
+        "sessions": ["fdf4b77a13938b5d05c1a60951c94466"]
+      },
+      "15db6f1f6b9870935f4042631d31a8e0": {
+        "url": "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["wolfwalkers"],
+        "sessions": [
+          "f8b4892635d8de2cd9777b94db2251eb",
+          "4e1819df35a7d9a6e067cb5d270e3710",
+          "b0b0be5818bf0f79fc66a63ba2e03955",
+          "b866cc2af201a8a8670680fe29e17456",
+          "8b342ab3d894ba1a5bdbf249031e664d"
+        ]
+      },
+      "b0d3b6423462ed1d6149c6c825476759": {
+        "url": "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["kirikou-and-the-sorceress"],
+        "sessions": [
+          "4b8cf4d53801f49bd2cc3ebb96db2ecf",
+          "f61dc15e954f7bdd7b0266a2082909ab",
+          "4efb141b25c0daa8fbfea6f30f3b4d33",
+          "d89a2bb88ab0af951a91a445cde5455b"
+        ]
+      },
+      "1f0c222e3f14aadb6218c7d6421ad85b": {
+        "url": "https://thecastlecinema.com/programme/3141342/labyrinth/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["labyrinth"],
+        "sessions": [
+          "8f965b532b02121fc321ced779cfa54a",
+          "530163be2c875ca43846dc0ec716cee2",
+          "af52e8d96bb94f8ff3566c013148966a",
+          "5270d4fcd863112be53349796af0f6d7"
+        ]
+      },
+      "bbb66aae5404f052e8dfea8654f09f0e": {
+        "url": "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["la-belle-et-la-bete"],
+        "sessions": [
+          "13a2434905ae1e2f3e944711b3352919",
+          "f8fa88ad7c91abbd97653fbc176a8ba6",
+          "ab2ad88fe04cfcbe67bbbd664dd88109"
+        ]
+      },
+      "ba8d9f1647d1321c6d2ee72b9fefb4f2": {
+        "url": "https://thecastlecinema.com/programme/3141345/black-swan/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["black-swan"],
+        "sessions": [
+          "f1f1058bd95955eaffa3743274101336",
+          "f80d4db2467a556d04b15cad2c66e783",
+          "6986311e62f0ba69920a789323cb8d23"
+        ]
+      },
+      "3f465180fb0e3485348d942ae5a088d2": {
+        "url": "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["pan-s-labyrinth"],
+        "sessions": [
+          "6ba3d2169a4b786461d35c2fdff6dad4",
+          "4c5e236f6088c2ccb98d8f6a0cafd65f",
+          "530d25b7468d22148df2950b78d17994"
+        ]
+      },
+      "7d0872117f5d19c8dbe28fd4df07c9a2": {
+        "url": "https://thecastlecinema.com/programme/2250667/cine-real-e-t/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["e-t-the-extra-terrestrial"],
+        "sessions": [
+          "d152bc9dd1277f306d83f5f96cebd02c",
+          "7a90011143974d8f9b8846e32fd84bb7",
+          "7adeb241ff66b2de041e2aee774eeda4"
+        ]
+      },
+      "649f2ed76d382ca4bf2f4a57b47fd581": {
+        "url": "https://thecastlecinema.com/programme/4371/elf/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["elf"],
+        "sessions": [
+          "3426ff80d78c75335faec33b5bd5c08b",
+          "7cf29c6f2647f2be520f4b7e1199e8fe",
+          "93c8b8c07de8a86d50cd9d0449527dd8",
+          "4f2e59ff4361cd804ec647ecac8f3f00",
+          "8821338ef3d6bb68afaa6524ad343bc7",
+          "dd855cb1afb58efa6f7bd2f7a4729099"
+        ]
+      },
+      "06f05ef18176c67f1ef432208fb0fd3d": {
+        "url": "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["the-snowman"],
+        "sessions": [
+          "e400d63d6434175144e0722fd4529dd9",
+          "2e4a1bc3f34a8267da050017b36efe91",
+          "a8c19609c37de5981a14b2a54e6be3d6"
+        ]
+      },
+      "c0bc5f62c1a95619919c3e135bfea464": {
+        "url": "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["three-wishes-for-cinderella"],
+        "sessions": [
+          "ed849ea8c4f73d5fe0b41fd79e0c0f27",
+          "1394712ade99f0914de8a33f7532d5f2"
+        ]
+      },
+      "b20ce330156288430dc8ed5961cc01c3": {
+        "url": "https://thecastlecinema.com/programme/3141343/rare-exports/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["rare-exports"],
+        "sessions": [
+          "2927a70051d7d14dacef8c1a0bcbcee3",
+          "91fa665c6ff2bd9fb8fe59f04b14e3a5",
+          "f5835084c370d8d67a38a67c2477b8f9"
+        ]
+      },
+      "15496cfdb236ce074c6cb453db0cf0f9": {
+        "url": "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["the-muppet-christmas-carol"],
+        "sessions": [
+          "044d4365455c50c5c4b420a1f65d52c7",
+          "a27988a743ec31257a05dd374f3f9700",
+          "7925c14e639f675a51ea3d047fb20041",
+          "b0b33569763d057712e1ea4852dfed40"
+        ]
+      },
+      "24f348d8a2573be320ad34bb3e47abe4": {
+        "url": "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["it-s-a-wonderful-life"],
+        "sessions": [
+          "c32f6e5c5ed8a07d09d5ff614a734e2e",
+          "18ba5706c3b6d606a1ee33910fb4ac46",
+          "5ccf958d4dede2eafcc13d0d7076f7d9",
+          "bff150c2f023c4ed1fd80b8bad8db603",
+          "739892f1112d70f57eb7f5572f56bd94",
+          "1c7e4073fe7a1d2a0cd538d19ed91f59"
+        ]
+      },
+      "aa2ba793ca2f7ca031d1ba48a256a279": {
+        "url": "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["frozen-ii"],
+        "sessions": [
+          "098e0d40461023549a02e58a5d1eb4f1",
+          "30027040c5df32c126bc63c6711a57ae",
+          "1099e0e88669f49ab15c564217eb17fc"
+        ]
+      },
+      "89ae149e09c396440f7114c8fc2cb6f1": {
+        "url": "https://thecastlecinema.com/programme/3109218/cine-real-the-godfather/",
+        "venue": "583d46630656323d7e2dbb81a66a9928",
+        "films": ["the-godfather"],
+        "sessions": [
+          "6c90ed7c5d9d5c2ed6295bc9968fa595",
+          "efeb36c0ede9d6da012368461c79570b",
+          "52b2077573380300130ec4dbc34aca58",
+          "87760392f54d258c6451f73c3c40534a"
+        ]
+      }
+    },
+    "sessionAttributes": {
+      "q-and-a": { "tag": "q-and-a" },
+      "16mm": { "tag": "16mm" }
+    }
+  },
+  "result": [
+    "bd57b9b92ed3da4c64b56d26072d23aa",
+    "01d89ee84ea421ad8dff2871fefc5ed3",
+    "15db6f1f6b9870935f4042631d31a8e0",
+    "b0d3b6423462ed1d6149c6c825476759",
+    "1f0c222e3f14aadb6218c7d6421ad85b",
+    "bbb66aae5404f052e8dfea8654f09f0e",
+    "ba8d9f1647d1321c6d2ee72b9fefb4f2",
+    "3f465180fb0e3485348d942ae5a088d2",
+    "7d0872117f5d19c8dbe28fd4df07c9a2",
+    "649f2ed76d382ca4bf2f4a57b47fd581",
+    "06f05ef18176c67f1ef432208fb0fd3d",
+    "c0bc5f62c1a95619919c3e135bfea464",
+    "b20ce330156288430dc8ed5961cc01c3",
+    "15496cfdb236ce074c6cb453db0cf0f9",
+    "24f348d8a2573be320ad34bb3e47abe4",
+    "aa2ba793ca2f7ca031d1ba48a256a279",
+    "89ae149e09c396440f7114c8fc2cb6f1"
+  ]
+}
