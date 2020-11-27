@@ -2,6 +2,9 @@
 
 <p>
   <img src="https://img.shields.io/npm/v/@filmcalendar/agents-core">
+  <a href="https://codecov.io/gh/filmcalendar/agents-core">
+    <img src="https://codecov.io/gh/filmcalendar/agents-core/branch/main/graph/badge.svg?token=bpP3FyzgXg"/>
+  </a>
   <img src="https://github.com/filmcalendar/agents-core/workflows/Build/badge.svg">
 </p>
 
