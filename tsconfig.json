@@ -4,13 +4,13 @@
     "declaration": true,
     "esModuleInterop": true,
     "lib": ["es2019"],
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "outDir": "./dist",
     "removeComments": true,
     "resolveJsonModule": true,
     "strict": true,
-    "target": "es2015"
+    "target": "ESNext"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules/**/*"]
