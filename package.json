@@ -6,6 +6,9 @@
   "author": "Rui Costa",
   "license": "MIT",
   "keywords": [],
+  "bin": {
+    "fc-agents-init": "sh/agents-init.sh"
+  },
   "files": [
     "dist/index.js",
     "dist/index.d.ts"
@@ -48,7 +51,7 @@
     "typescript": "4.1.2"
   },
   "scripts": {
-    "build": "bash scripts/build.sh",
+    "build": "bash sh/build.sh",
     "ci:test": "jest --ci",
     "ci:test:coverage": "jest --ci --coverage",
     "lint": "eslint src/**/*.ts",
