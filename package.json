@@ -61,16 +61,42 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "release": {
-    "branches": [
-      "main"
+  "eslintConfig": {
+    "extends": [
+      "airbnb-typescript/base",
+      "prettier",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:import/typescript",
+      "plugin:jest/all"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "jest"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "project": "./tsconfig.json"
+    },
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "rules": {
+      "jest/no-hooks": "off",
+      "@typescript-eslint/comma-dangle": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.ts"
+        ],
+        "rules": {
+          "no-undef": "off",
+          "@typescript-eslint/naming-convention": "off"
+        }
+      }
     ]
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "pretty-quick --staged"
-    }
   },
   "jest": {
     "roots": [
@@ -84,5 +110,21 @@
     "transform": {
       "^.+\\.(t|j)sx?$": "ts-jest"
     }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 80
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
