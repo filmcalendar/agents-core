@@ -10,6 +10,21 @@
 
 > Agent's core engine - operation, normalization and validation
 
+## Usage
+
+```typescript
+import program from '@filmcalendar/agents-core"
+import agents from "./agents"
+
+program(agents)
+```
+
+| Script                       |                                             |
+| ---------------------------- | ------------------------------------------- |
+| `fc-agents-init`             | Spawns agents on 10 sec interval            |
+| `fc-agents-docker-build`     | Build country level docker image            |
+| `fc-agents-docker-run-local` | Runs a country level docker image (locally) |
+
 ## Install
 
 ```bash
