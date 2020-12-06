@@ -12,6 +12,5 @@ export const serializeObject: SerializeObjectFn = (obj) =>
     .join(',');
 
 type GetFilmTitleFn = (film: FC.Agent.Film) => string;
-export const getFilmTitle: GetFilmTitleFn = (film) => {
-  return film?.title || film?.titleTranslated || '';
-};
+export const getFilmTitle: GetFilmTitleFn = (film) =>
+  film?.title || film?.titleTranslated || '';

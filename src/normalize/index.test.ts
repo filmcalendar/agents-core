@@ -13,6 +13,6 @@ describe('normalize', () => {
     } as unknown) as FC.Agent.Agent;
     const result = normalize(agent, mockPages as FC.Agent.Page[]);
 
-    expect(result).toStrictEqual(mockReport);
+    expect(result).toStrictEqual((mockReport as unknown) as FC.Agent.Dispatch);
   });
 });

@@ -8,25 +8,21 @@ import type * as FC from '@filmcalendar/types';
 type WithAgentFn<T> = (agent: FC.Agent.Agent) => T;
 
 type RefVenueFn = (venue: FC.Agent.Venue) => FC.Agent.Venue;
-export const refVenue: RefVenueFn = (venue) => {
-  return {
-    ...venue,
-    ref: [venue.chain, venue.name]
-      .map((part) => (part ? slugify(part as string) : ''))
-      .filter(Boolean)
-      .join('-'),
-  };
-};
+export const refVenue: RefVenueFn = (venue) => ({
+  ...venue,
+  ref: [venue.chain, venue.name]
+    .map((part) => (part ? slugify(part as string) : ''))
+    .filter(Boolean)
+    .join('-'),
+});
 
 type OnlyFutureSessionsFn = (page: FC.Agent.Page) => FC.Agent.Page;
-export const onlyFutureSessions: OnlyFutureSessionsFn = (page) => {
-  return {
-    ...page,
-    sessions: page.sessions.filter(({ dateTime }) =>
-      dtIsAfter(new Date(dateTime), Date.now())
-    ),
-  };
-};
+export const onlyFutureSessions: OnlyFutureSessionsFn = (page) => ({
+  ...page,
+  sessions: page.sessions.filter(({ dateTime }) =>
+    dtIsAfter(new Date(dateTime), Date.now())
+  ),
+});
 
 type IsValidPageFn = (page?: FC.Agent.Page | null) => boolean;
 export const isValidPage: IsValidPageFn = (page) =>

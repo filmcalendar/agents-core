@@ -1,3 +1,5 @@
+import type * as FC from '@filmcalendar/types';
+
 import args from './args';
 
 describe('program arguments', () => {
@@ -22,6 +24,6 @@ describe('program arguments', () => {
     ],
   ])('parses command line arguments: %s', (_, argv, expected) => {
     const result = args(argv);
-    expect(result).toStrictEqual(expected);
+    expect(result).toStrictEqual(expected as FC.Scraper.Options);
   });
 });
