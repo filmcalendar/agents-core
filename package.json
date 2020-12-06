@@ -13,8 +13,7 @@
   },
   "files": [
     "dist/index.js",
-    "dist/index.d.ts",
-    "dist/docker/*"
+    "dist/index.d.ts"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
