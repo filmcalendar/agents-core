@@ -12,10 +12,10 @@ jobs:
       - uses: actions/cache@v1
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      - run: npm i --no-audit
-      - run: npm run validate
-      - run: npm run ci:test
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+      - run: yarn
+      - run: yarn validate
+      - run: yarn ci:test
 
   test-coverage:
     needs: test
@@ -24,13 +24,13 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 15
       - uses: actions/cache@v2
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      - run: npm i --no-audit
-      - run: npm run ci:test:coverage
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+      - run: yarn
+      - run: yarn ci:test:coverage
       - uses: codecov/codecov-action@v1
 
   publish-to-npm:
@@ -38,12 +38,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
       - uses: actions/setup-node@v1
         with:
           node-version: 15
           registry-url: https://registry.npmjs.org/
-      - run: npm i --no-audit
-      - run: npm run build
+      - run: yarn
+      - run: yarn build
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
         env:
