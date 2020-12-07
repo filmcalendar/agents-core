@@ -7,8 +7,6 @@
   "license": "MIT",
   "keywords": [],
   "bin": {
-    "fc-agents-init": "sh/agents-init.sh",
-    "fc-agents-docker-build": "sh/docker-build.sh",
     "fc-agents-docker-run-local": "sh/docker-run-local.sh"
   },
   "files": [

@@ -21,8 +21,6 @@ program(agents)
 
 | Script                       |                                            |
 | ---------------------------- | ------------------------------------------ |
-| `fc-agents-init`             | Spawns agents on 10s intervals             |
-| `fc-agents-docker-build`     | Build country level docker image           |
 | `fc-agents-docker-run-local` | Run a country level docker image (locally) |
 
 ## Install
