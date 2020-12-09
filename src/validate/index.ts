@@ -23,9 +23,9 @@ const validateReport: ValidateFn = (agent, report) => {
   let isValid;
   let validate: AJV.ValidateFunction;
   switch (type) {
-    case 'cinemas':
+    case 'films':
     default:
-      validate = ajv.compile(schemas.cinemas);
+      validate = ajv.compile(schemas.films);
       isValid = validate(report);
   }
 

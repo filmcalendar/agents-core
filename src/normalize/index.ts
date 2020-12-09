@@ -1,7 +1,7 @@
 import { normalize } from 'normalizr';
 import type * as FC from '@filmcalendar/types';
 
-import cinemaSchema from './cinema';
+import filmsSchema from './films';
 
 type NormalizeDataFn = (
   agent: FC.Agent.Agent,
@@ -12,9 +12,9 @@ const normalizePages: NormalizeDataFn = (agent, data) => {
   const { type } = agent.register();
 
   switch (type) {
-    case 'cinemas':
+    case 'films':
     default:
-      return normalize(data, cinemaSchema);
+      return normalize(data, filmsSchema);
   }
 };
 

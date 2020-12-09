@@ -1,0 +1,35 @@
+{
+  "entities": {
+    "providers": {
+      "e4ad079fd78d3fbfb9ed55d02f73fe58": {
+        "name": "BBC iPlayer",
+        "type": "streaming",
+        "url": "https://www.bbc.co.uk/iplayer",
+        "ref": "bbc-i-player"
+      }
+    },
+    "films": {
+      "adam-curtis": { "title": "Adam Curtis", "director": ["Adam Curtis"] }
+    },
+    "sessionAttributes": {
+      "audio-described": { "tag": "audio-described" },
+      "sign-language": { "tag": "sign-language" }
+    },
+    "availability": {
+      "2ab84725df1b45313b533104efea9bde": {
+        "start": "2020-12-09T16:33:40.194Z",
+        "end": "2021-10-16T20:00:00.000Z",
+        "attributes": ["audio-described", "sign-language"]
+      }
+    },
+    "pages": {
+      "10f98a28efddc871cdc624010020fc11": {
+        "url": "https://www.bbc.co.uk/iplayer/episode/p04b183c/adam-curtis-hypernormalisation",
+        "provider": "e4ad079fd78d3fbfb9ed55d02f73fe58",
+        "films": ["adam-curtis"],
+        "availability": "2ab84725df1b45313b533104efea9bde"
+      }
+    }
+  },
+  "result": ["10f98a28efddc871cdc624010020fc11"]
+}

@@ -1,8 +1,8 @@
 import type * as FC from '@filmcalendar/types';
 
-import { serializeBookingLink, serializeSession } from './cinema';
+import { serializeBookingLink, serializeSession } from './films';
 
-describe('normalize cinema', () => {
+describe('normalize films', () => {
   it.each([
     ['https://venue.com/buy/film-a', 'https://venue.com/buy/film-a'],
     ['https://venue.com/buy/film a', 'https://venue.com/buy/film%20a'],
@@ -28,7 +28,7 @@ describe('normalize cinema', () => {
       'simple',
       {
         dateTime: '2019-02-18T21:30:00.000Z',
-        bookingLink: 'https://venue.com/buy/film-a',
+        link: 'https://venue.com/buy/film-a',
         attributes: [],
       },
       '2019-02-18T21:30:00.000Z|https://venue.com/buy/film-a|',
@@ -37,16 +37,16 @@ describe('normalize cinema', () => {
       'with attributes',
       {
         dateTime: '2020-02-18T21:30:00.000Z',
-        bookingLink: 'https://venue.com/buy/film-a',
+        link: 'https://venue.com/buy/film-a',
         attributes: ['3D', 'parent-and-baby', 'kids', 'parent & baby', 'HOH'],
       },
       '2020-02-18T21:30:00.000Z|https://venue.com/buy/film-a|3d,hoh,kids,parent-and-baby,parent%20%26%20baby',
     ],
     [
-      'with bookingLing',
+      'with booking link',
       {
         attributes: ['audio-description'],
-        bookingLink: {
+        link: {
           method: 'POST',
           formUrlEncoded: {
             'BOset::WSmap::seatmap::performance_ids':

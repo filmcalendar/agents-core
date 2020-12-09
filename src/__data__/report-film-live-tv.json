@@ -1,0 +1,30 @@
+{
+  "entities": {
+    "providers": {
+      "a0de8dfc8bcffb249e6a4f28e5b5e8de": {
+        "ref": "channel-4",
+        "name": "Channel 4",
+        "type": "live-tv",
+        "url": "https://www.channel4.com/now/C4"
+      }
+    },
+    "films": { "split": { "title": "Split", "year": 2016 } },
+    "sessionAttributes": { "audio-described": { "tag": "audio-described" } },
+    "sessions": {
+      "74c594d2f8a4a01d5f7ddc80a6c250ba": {
+        "dateTime": "2020-12-13T00:00:00.000Z",
+        "link": "https://www.channel4.com/tv-guide/2020/12/12/C4/30413225",
+        "attributes": ["audio-described"]
+      }
+    },
+    "pages": {
+      "3ee06b750c902bfc428ebcb2f846a568": {
+        "url": "https://www.channel4.com/tv-guide/2020/12/12/C4/30413225",
+        "provider": "a0de8dfc8bcffb249e6a4f28e5b5e8de",
+        "films": ["split"],
+        "sessions": ["74c594d2f8a4a01d5f7ddc80a6c250ba"]
+      }
+    }
+  },
+  "result": ["3ee06b750c902bfc428ebcb2f846a568"]
+}

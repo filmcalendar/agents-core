@@ -1,0 +1,33 @@
+{
+  "url": "https://thecastlecinema.com/programme/3141343/rare-exports/",
+  "provider": {
+    "name": "The Castle Cinema",
+    "url": "https://thecastlecinema.com",
+    "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+    "email": "hello@thecastlecinema.com",
+    "ref": "the-castle-cinema",
+    "type": "cinema"
+  },
+  "films": [
+    {
+      "title": "Rare Exports",
+      "director": ["Jalmari Helander"],
+      "cast": ["Jorma Tommila", "Onni Tommila", "Peeter Jakobi"],
+      "year": 2010
+    }
+  ],
+  "sessions": [
+    {
+      "dateTime": "2020-12-15T14:15:00.000Z",
+      "link": "https://thecastlecinema.com/bookings/3141393/"
+    },
+    {
+      "dateTime": "2020-12-13T15:45:00.000Z",
+      "link": "https://thecastlecinema.com/bookings/3141388/"
+    },
+    {
+      "dateTime": "2020-12-21T21:00:00.000Z",
+      "link": "https://thecastlecinema.com/bookings/3141413/"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import list, { serializeAgents } from './list';
 
 const mockAgent = {
   register: (): FC.Agent.Registration => ({} as FC.Agent.Registration),
-  venues: async (): Promise<FC.Agent.Venue[]> => [],
+  providers: async (): Promise<FC.Agent.Provider[]> => [],
   programme: async (): Promise<FC.Agent.Programme> =>
     ({} as FC.Agent.Programme),
   page: async (): Promise<FC.Agent.Page> => ({} as FC.Agent.Page),

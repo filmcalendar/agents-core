@@ -1,0 +1,17 @@
+{
+  "url": "https://www.channel4.com/tv-guide/2020/12/12/C4/30413225",
+  "provider": {
+    "ref": "channel-4",
+    "name": "Channel 4",
+    "type": "live-tv",
+    "url": "https://www.channel4.com/now/C4"
+  },
+  "films": [{ "title": "Split", "year": 2016 }],
+  "sessions": [
+    {
+      "dateTime": "2020-12-13T00:00:00.000Z",
+      "link": "https://www.channel4.com/tv-guide/2020/12/12/C4/30413225",
+      "attributes": ["audio-described"]
+    }
+  ]
+}

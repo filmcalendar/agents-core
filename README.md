@@ -1,4 +1,4 @@
-# filmcalendar/agents-core
+# agents-core
 
 <p>
   <img src="https://img.shields.io/npm/v/@filmcalendar/agents-core">

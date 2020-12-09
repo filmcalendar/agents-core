@@ -6,12 +6,12 @@ import type * as FC from '@filmcalendar/types';
 import { serializeObject, getFilmTitle } from './helpers';
 
 type SerializeBookingLinkFn = (
-  bookingLink: string | FC.Agent.BookingRequest | null
+  link: string | FC.Agent.BookingRequest | null
 ) => string;
-export const serializeBookingLink: SerializeBookingLinkFn = (bookingLink) => {
-  if (!bookingLink) return '';
-  if (typeof bookingLink === 'string') return encodeURI(bookingLink);
-  const { url, method, formUrlEncoded = {}, jsonData = {} } = bookingLink;
+export const serializeBookingLink: SerializeBookingLinkFn = (link) => {
+  if (!link) return '';
+  if (typeof link === 'string') return encodeURI(link);
+  const { url, method, formUrlEncoded = {}, jsonData = {} } = link;
 
   return [
     method.toLowerCase(),
@@ -23,11 +23,11 @@ export const serializeBookingLink: SerializeBookingLinkFn = (bookingLink) => {
 
 type SerializeSessionFn = (session: FC.Agent.Session) => string;
 export const serializeSession: SerializeSessionFn = (session) => {
-  const { dateTime, bookingLink, attributes } = session;
+  const { dateTime, link, attributes } = session;
 
   return [
     dateTime,
-    serializeBookingLink(bookingLink),
+    serializeBookingLink(link),
     (attributes || [])
       .map((a) => a.toLowerCase())
       .map((a) => encodeURIComponent(a))
@@ -36,8 +36,24 @@ export const serializeSession: SerializeSessionFn = (session) => {
   ].join('|');
 };
 
-const venue = new schema.Entity(
-  'venues',
+type SerializeAvailabilityFn = (availability: FC.Agent.Availability) => string;
+export const serializeAvailability: SerializeAvailabilityFn = (
+  availability
+) => {
+  const { start, end, attributes = [] } = availability;
+  return [
+    start,
+    end,
+    (attributes || [])
+      .map((a) => a.toLowerCase())
+      .map((a) => encodeURIComponent(a))
+      .sort((a, b) => a.localeCompare(b))
+      .join(','),
+  ].join('|');
+};
+
+const provider = new schema.Entity(
+  'providers',
   {},
   { idAttribute: (input): string => md5(serializeObject(input)) }
 );
@@ -58,22 +74,36 @@ const session = new schema.Entity(
   'sessions',
   { attributes: [sessionAttribute] },
   {
+    idAttribute: (item): string => md5(serializeSession(item)),
     processStrategy: (item): unknown => ({
       ...item,
       attributes: (item.attributes || []).map((attrib: string) => ({
         tag: attrib,
       })),
     }),
-    idAttribute: (item): string => md5(serializeSession(item)),
+  }
+);
+
+const availability = new schema.Entity(
+  'availability',
+  { attributes: [sessionAttribute] },
+  {
+    idAttribute: (item): string => md5(serializeAvailability(item)),
+    processStrategy: (item): unknown => ({
+      ...item,
+      attributes: (item.attributes || []).map((attrib: string) => ({
+        tag: attrib,
+      })),
+    }),
   }
 );
 
 const page = new schema.Entity(
   'pages',
-  { venue, films: [film], sessions: [session] },
+  { provider, films: [film], sessions: [session], availability },
   {
     idAttribute: (input): string =>
-      md5(`${[input.venue.name, input.url].join('-')}`),
+      md5(`${[input.provider.name, input.url].join('-')}`),
   }
 );
 
