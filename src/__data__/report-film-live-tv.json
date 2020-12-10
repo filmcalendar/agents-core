@@ -22,6 +22,7 @@
         "url": "https://www.channel4.com/tv-guide/2020/12/12/C4/30413225",
         "provider": "a0de8dfc8bcffb249e6a4f28e5b5e8de",
         "films": ["split"],
+        "isFeatured": false,
         "sessions": ["74c594d2f8a4a01d5f7ddc80a6c250ba"]
       }
     }

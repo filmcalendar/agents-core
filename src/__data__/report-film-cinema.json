@@ -40,6 +40,7 @@
         "url": "https://thecastlecinema.com/programme/3141343/rare-exports/",
         "provider": "e2b8faf5d9adbc7a07698de95167366c",
         "films": ["rare-exports"],
+        "isFeatured": false,
         "sessions": [
           "2927a70051d7d14dacef8c1a0bcbcee3",
           "91fa665c6ff2bd9fb8fe59f04b14e3a5",

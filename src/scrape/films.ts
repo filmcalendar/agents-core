@@ -55,12 +55,14 @@ export const scrapeProvider: WithAgentFn<ScrapeProviderFn> = (agent) => async (
   vn
 ) => {
   const provider = refProvider(vn);
+  const featured = await agent.featured(provider);
   const { programme, _data } = await agent.programme(provider);
   const pages = await seriesWith(programme, (url) =>
     agent.page(url, provider, _data)
   ).then((results) => results.filter(Boolean) as FC.Agent.Page[]);
 
   return pages
+    .map((page) => ({ ...page, isFeatured: featured.includes(page.url) }))
     .map(removeTemporaryAttributes)
     .map(onlyFutureSessions)
     .filter(onlyFutureEndAvailability)

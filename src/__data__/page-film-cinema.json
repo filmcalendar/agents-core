@@ -19,15 +19,19 @@
   "sessions": [
     {
       "dateTime": "2020-12-15T14:15:00.000Z",
-      "link": "https://thecastlecinema.com/bookings/3141393/"
+      "link": "https://thecastlecinema.com/bookings/3141393/",
+      "attributes": []
     },
     {
       "dateTime": "2020-12-13T15:45:00.000Z",
-      "link": "https://thecastlecinema.com/bookings/3141388/"
+      "link": "https://thecastlecinema.com/bookings/3141388/",
+      "attributes": []
     },
     {
       "dateTime": "2020-12-21T21:00:00.000Z",
-      "link": "https://thecastlecinema.com/bookings/3141413/"
+      "link": "https://thecastlecinema.com/bookings/3141413/",
+      "attributes": []
     }
-  ]
+  ],
+  "isFeatured": false
 }

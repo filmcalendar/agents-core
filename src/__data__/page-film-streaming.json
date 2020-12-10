@@ -11,5 +11,6 @@
     "start": "2020-12-09T16:33:40.194Z",
     "end": "2021-10-16T20:00:00.000Z",
     "attributes": ["audio-described", "sign-language"]
-  }
+  },
+  "isFeatured": false
 }
