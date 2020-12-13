@@ -22,6 +22,41 @@ export const removeTemporaryAttributes: RemoveTemporaryAttributesFn = (page) =>
     JSON.stringify(page, (key, value) => (/^_/.test(key) ? undefined : value))
   );
 
+type GetCollectionsFn = (
+  agent: FC.Agent.Agent,
+  provider: FC.Agent.Provider
+) => Promise<FC.Agent.Collection[]>;
+const getCollections: GetCollectionsFn = async (agent, provider) => {
+  if (!agent.collections) return [];
+
+  const {
+    collections: collectionsUrls,
+    _data: _collectionsData,
+  } = await agent.collections(provider);
+
+  const collectionFn =
+    typeof agent.collection === 'undefined'
+      ? async () => ({} as FC.Agent.Collection)
+      : agent.collection;
+
+  return seriesWith(collectionsUrls, (url) =>
+    collectionFn(url, { _data: _collectionsData })
+  );
+};
+
+type GetCollectionsForPageFn = (page: FC.Agent.Page) => FC.Agent.Page;
+type GetCollectionsForPage = (
+  collections: FC.Agent.Collection[]
+) => GetCollectionsForPageFn;
+export const getCollectionsForPage: GetCollectionsForPage = (collections) => (
+  page
+) => ({
+  ...page,
+  collections: collections.filter((collection) =>
+    collection.programme.includes(page.url)
+  ),
+});
+
 type OnlyFutureSessionsFn = (page: FC.Agent.Page) => FC.Agent.Page;
 export const onlyFutureSessions: OnlyFutureSessionsFn = (page) => ({
   ...page,
@@ -55,7 +90,13 @@ export const scrapeProvider: WithAgentFn<ScrapeProviderFn> = (agent) => async (
   vn
 ) => {
   const provider = refProvider(vn);
-  const featured = await agent.featured(provider);
+
+  const featuredFn =
+    typeof agent.featured === 'undefined' ? async () => [] : agent.featured;
+  const featured = await featuredFn(provider);
+
+  const collections = await getCollections(agent, provider);
+
   const { programme, _data } = await agent.programme(provider);
   const pages = await seriesWith(programme, (url) =>
     agent.page(url, provider, _data)
@@ -63,6 +104,7 @@ export const scrapeProvider: WithAgentFn<ScrapeProviderFn> = (agent) => async (
 
   return pages
     .map((page) => ({ ...page, isFeatured: featured.includes(page.url) }))
+    .map(getCollectionsForPage(collections))
     .map(removeTemporaryAttributes)
     .map(onlyFutureSessions)
     .filter(onlyFutureEndAvailability)

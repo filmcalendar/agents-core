@@ -6,48 +6,52 @@
         "url": "https://thecastlecinema.com",
         "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
         "email": "hello@thecastlecinema.com",
-        "ref": "the-castle-cinema",
-        "type": "cinema"
+        "type": "cinema",
+        "ref": "the-castle-cinema"
       }
     },
-    "films": {
-      "rare-exports": {
-        "title": "Rare Exports",
-        "director": ["Jalmari Helander"],
-        "cast": ["Jorma Tommila", "Onni Tommila", "Peeter Jakobi"],
-        "year": 2010
-      }
-    },
+    "films": { "the-snowman": { "title": "The Snowman", "year": 1982 } },
+    "sessionAttributes": { "16mm": { "tag": "16mm" } },
     "sessions": {
-      "2927a70051d7d14dacef8c1a0bcbcee3": {
-        "dateTime": "2020-12-15T14:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141393/",
-        "attributes": []
+      "e400d63d6434175144e0722fd4529dd9": {
+        "dateTime": "2020-12-22T19:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141033/",
+        "attributes": ["16mm"]
       },
-      "91fa665c6ff2bd9fb8fe59f04b14e3a5": {
-        "dateTime": "2020-12-13T15:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141388/",
-        "attributes": []
+      "2e4a1bc3f34a8267da050017b36efe91": {
+        "dateTime": "2020-12-20T14:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141029/",
+        "attributes": ["16mm"]
       },
-      "f5835084c370d8d67a38a67c2477b8f9": {
-        "dateTime": "2020-12-21T21:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141413/",
-        "attributes": []
+      "a8c19609c37de5981a14b2a54e6be3d6": {
+        "dateTime": "2020-12-13T11:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141025/",
+        "attributes": ["16mm"]
+      }
+    },
+    "collections": {
+      "enchanted-castle": {
+        "ref": "enchanted-castle",
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/"
       }
     },
     "pages": {
-      "b20ce330156288430dc8ed5961cc01c3": {
-        "url": "https://thecastlecinema.com/programme/3141343/rare-exports/",
+      "06f05ef18176c67f1ef432208fb0fd3d": {
+        "url": "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
         "provider": "e2b8faf5d9adbc7a07698de95167366c",
-        "films": ["rare-exports"],
-        "isFeatured": false,
+        "films": ["the-snowman"],
         "sessions": [
-          "2927a70051d7d14dacef8c1a0bcbcee3",
-          "91fa665c6ff2bd9fb8fe59f04b14e3a5",
-          "f5835084c370d8d67a38a67c2477b8f9"
-        ]
+          "e400d63d6434175144e0722fd4529dd9",
+          "2e4a1bc3f34a8267da050017b36efe91",
+          "a8c19609c37de5981a14b2a54e6be3d6"
+        ],
+        "isFeatured": false,
+        "collections": ["enchanted-castle"]
       }
     }
   },
-  "result": ["b20ce330156288430dc8ed5961cc01c3"]
+  "result": ["06f05ef18176c67f1ef432208fb0fd3d"]
 }

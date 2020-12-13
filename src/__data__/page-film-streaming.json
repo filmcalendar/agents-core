@@ -12,5 +12,6 @@
     "end": "2021-10-16T20:00:00.000Z",
     "attributes": ["audio-described", "sign-language"]
   },
-  "isFeatured": false
+  "isFeatured": false,
+  "collections": []
 }

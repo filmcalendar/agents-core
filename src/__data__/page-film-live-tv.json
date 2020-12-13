@@ -14,5 +14,6 @@
       "attributes": ["audio-described"]
     }
   ],
-  "isFeatured": false
+  "isFeatured": false,
+  "collections": []
 }

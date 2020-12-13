@@ -1,56 +1,13 @@
 import { schema } from 'normalizr';
 import md5 from 'md5';
 import slugify from '@sindresorhus/slugify';
-import type * as FC from '@filmcalendar/types';
 
-import { serializeObject, getFilmTitle } from './helpers';
-
-type SerializeBookingLinkFn = (
-  link: string | FC.Agent.BookingRequest | null
-) => string;
-export const serializeBookingLink: SerializeBookingLinkFn = (link) => {
-  if (!link) return '';
-  if (typeof link === 'string') return encodeURI(link);
-  const { url, method, formUrlEncoded = {}, jsonData = {} } = link;
-
-  return [
-    method.toLowerCase(),
-    encodeURI(url),
-    serializeObject(formUrlEncoded),
-    serializeObject(jsonData),
-  ].join('|');
-};
-
-type SerializeSessionFn = (session: FC.Agent.Session) => string;
-export const serializeSession: SerializeSessionFn = (session) => {
-  const { dateTime, link, attributes } = session;
-
-  return [
-    dateTime,
-    serializeBookingLink(link),
-    (attributes || [])
-      .map((a) => a.toLowerCase())
-      .map((a) => encodeURIComponent(a))
-      .sort((a, b) => a.localeCompare(b))
-      .join(','),
-  ].join('|');
-};
-
-type SerializeAvailabilityFn = (availability: FC.Agent.Availability) => string;
-export const serializeAvailability: SerializeAvailabilityFn = (
-  availability
-) => {
-  const { start, end, attributes = [] } = availability;
-  return [
-    start,
-    end,
-    (attributes || [])
-      .map((a) => a.toLowerCase())
-      .map((a) => encodeURIComponent(a))
-      .sort((a, b) => a.localeCompare(b))
-      .join(','),
-  ].join('|');
-};
+import {
+  serializeObject,
+  getFilmTitle,
+  serializeSession,
+  serializeAvailability,
+} from './helpers';
 
 const provider = new schema.Entity(
   'providers',
@@ -98,9 +55,27 @@ const availability = new schema.Entity(
   }
 );
 
+const collection = new schema.Entity(
+  'collections',
+  {},
+  {
+    idAttribute: (input): string => slugify(input.name),
+    processStrategy: (item): unknown => {
+      const { programme, ...restOfItem } = item;
+      return { ref: slugify(item.name), ...restOfItem };
+    },
+  }
+);
+
 const page = new schema.Entity(
   'pages',
-  { provider, films: [film], sessions: [session], availability },
+  {
+    provider,
+    films: [film],
+    sessions: [session],
+    availability,
+    collections: [collection],
+  },
   {
     idAttribute: (input): string =>
       md5(`${[input.provider.name, input.url].join('-')}`),

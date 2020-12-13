@@ -1,36 +1,19 @@
 import type * as FC from '@filmcalendar/types';
 
+import mockPageRaw from './__data__/page.json';
+import mockCollectionsRaw from './__data__/collections.json';
+
 import {
   refProvider,
+  getCollectionsForPage,
   onlyFutureSessions,
   onlyFutureEndAvailability,
   isValidPage,
   removeTemporaryAttributes,
 } from './films';
 
-const mockPage: FC.Agent.Page = {
-  url: 'https://foo.com/film-1',
-  provider: {
-    ref: 'foo',
-    name: 'Foo Cinema',
-    type: 'cinema',
-    url: 'https://foo.com',
-    _data: { foo: 'bar' },
-  },
-  films: [{ title: 'The Film II' }],
-  sessions: [
-    {
-      dateTime: '2020-11-20T12:30:00.000Z',
-      attributes: [],
-      link: 'https:/foo.com/buy/1',
-    },
-    {
-      dateTime: '2020-11-30T12:30:00.000Z',
-      attributes: [],
-      link: 'https:/foo.com/buy/2',
-    },
-  ],
-};
+const mockPage = mockPageRaw as FC.Agent.Page;
+const mockCollections = mockCollectionsRaw as FC.Agent.Collection[];
 
 describe('cinema job', () => {
   it.each([
@@ -119,5 +102,14 @@ describe('cinema job', () => {
 
     expect(result).toBeNull();
     dateNowSpy.mockRestore();
+  });
+
+  it('gets collections for a page', () => {
+    expect.assertions(2);
+    const result = getCollectionsForPage(mockCollections)(mockPage);
+
+    expect(result.collections).toHaveLength(2);
+    const [first] = result.collections || [];
+    expect(first).toStrictEqual(mockCollections[0]);
   });
 });

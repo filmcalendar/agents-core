@@ -1,11 +1,119 @@
 [
   {
+    "url": "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [{ "title": "The Snowman", "year": 1982 }],
+    "sessions": [
+      {
+        "dateTime": "2020-12-22T19:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141033/",
+        "attributes": ["16mm"]
+      },
+      {
+        "dateTime": "2020-12-20T14:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141029/",
+        "attributes": ["16mm"]
+      },
+      {
+        "dateTime": "2020-12-13T11:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141025/",
+        "attributes": ["16mm"]
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3152194/cocoon/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "Cocoon",
+        "director": ["Leonie Krippendorff"],
+        "cast": ["Elina Vildanova", "Lena Klenke", "Lena Urzendowsky"],
+        "year": 2021
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-11T21:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164823/"
+      },
+      {
+        "dateTime": "2020-12-12T18:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164829/"
+      },
+      {
+        "dateTime": "2020-12-13T18:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164857/"
+      },
+      {
+        "dateTime": "2020-12-14T16:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164873/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-15T13:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164910/"
+      },
+      {
+        "dateTime": "2020-12-15T18:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164916/"
+      },
+      {
+        "dateTime": "2020-12-16T13:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164951/"
+      },
+      {
+        "dateTime": "2020-12-17T15:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164957/"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
     "url": "https://thecastlecinema.com/programme/3141361/coraline/",
     "provider": {
       "name": "The Castle Cinema",
       "url": "https://thecastlecinema.com",
       "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
       "email": "hello@thecastlecinema.com",
+      "type": "cinema",
       "ref": "the-castle-cinema"
     },
     "films": [
@@ -18,291 +126,85 @@
     ],
     "sessions": [
       {
-        "dateTime": "2020-12-05T11:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141362/"
-      },
-      {
-        "dateTime": "2020-12-23T13:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141419/"
-      },
-      {
         "dateTime": "2020-12-28T13:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141429/"
+        "link": "https://thecastlecinema.com/bookings/3141429/",
+        "attributes": ["5-mondays"]
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
       }
     ]
   },
   {
-    "url": "https://thecastlecinema.com/programme/3142081/wolfwalkers-q-a/",
+    "url": "https://thecastlecinema.com/programme/3143804/county-lines/",
     "provider": {
       "name": "The Castle Cinema",
       "url": "https://thecastlecinema.com",
       "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
       "email": "hello@thecastlecinema.com",
+      "type": "cinema",
       "ref": "the-castle-cinema"
     },
     "films": [
       {
-        "title": "Wolfwalkers",
-        "director": ["Ross Stewart", "Tomm Moore"],
-        "cast": ["Honor Kneafsey", "Sean Bean", "Eva Whittaker"],
+        "title": "County Lines",
+        "director": ["Henry Blake"],
+        "cast": ["Ashley Madekwe", "Harris Dickinson", "Marcus Rutherford"],
         "year": 2020
       }
     ],
     "sessions": [
       {
-        "dateTime": "2020-12-05T14:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3142089/",
-        "attributes": ["q-and-a"]
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
-      {
-        "title": "Wolfwalkers",
-        "director": ["Ross Stewart", "Tomm Moore"],
-        "cast": ["Honor Kneafsey", "Sean Bean", "Eva Whittaker"],
-        "year": 2020
-      }
-    ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-11T16:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3142102/"
+        "dateTime": "2020-12-12T18:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164831/"
       },
       {
-        "dateTime": "2020-12-07T16:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3142097/"
+        "dateTime": "2020-12-13T18:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164855/"
       },
       {
-        "dateTime": "2020-12-06T11:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3142091/"
+        "dateTime": "2020-12-14T14:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164865/",
+        "attributes": ["5-mondays"]
       },
       {
-        "dateTime": "2020-12-08T11:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3142099/"
+        "dateTime": "2020-12-15T11:20:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164906/"
       },
       {
-        "dateTime": "2020-12-13T11:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3142104/"
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
+        "dateTime": "2020-12-15T21:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164918/"
+      },
       {
-        "title": "Kirikou and the Sorceress",
-        "director": ["Michel Ocelot"],
-        "year": 1998
+        "dateTime": "2020-12-16T11:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164949/"
+      },
+      {
+        "dateTime": "2020-12-17T14:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164955/"
       }
     ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-06T11:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141366/"
-      },
-      {
-        "dateTime": "2020-12-28T11:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141427/"
-      },
-      {
-        "dateTime": "2020-12-12T11:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141384/"
-      },
-      {
-        "dateTime": "2020-12-22T11:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3142082/"
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/3141342/labyrinth/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
-      {
-        "title": "Labyrinth",
-        "director": ["Jim Henson"],
-        "cast": ["David Bowie", "Jennifer Connelly"],
-        "year": 1986
-      }
-    ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-08T13:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141372/"
-      },
-      {
-        "dateTime": "2020-12-15T18:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141395/"
-      },
-      {
-        "dateTime": "2020-12-06T13:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141368/"
-      },
-      {
-        "dateTime": "2020-12-28T15:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141431/"
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
-      {
-        "title": "La Belle et la Bete",
-        "director": ["Jean Cocteau", "Rene Clement"],
-        "cast": ["Jean Marais", "Josette Day"],
-        "year": 1946
-      }
-    ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-07T18:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141370/"
-      },
-      {
-        "dateTime": "2020-12-19T16:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141403/"
-      },
-      {
-        "dateTime": "2020-12-10T14:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141378/"
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/3141345/black-swan/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
-      {
-        "title": "Black Swan",
-        "director": ["Darren Aronofsky"],
-        "cast": ["Natalie Portman", "Mila Kunis", "Vincent Cassel"],
-        "year": 2010
-      }
-    ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-11T16:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141380/"
-      },
-      {
-        "dateTime": "2020-12-08T21:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141374/"
-      },
-      {
-        "dateTime": "2020-12-28T21:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141435/"
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
-      {
-        "title": "Pan's Labyrinth",
-        "director": ["Guillermo Del Toro"],
-        "cast": ["Ariadna Gil", "Ivana Baquero", "Sergi L", "pez"],
-        "year": 2006
-      }
-    ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-12T16:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141386/"
-      },
-      {
-        "dateTime": "2020-12-09T13:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141376/"
-      },
-      {
-        "dateTime": "2020-12-28T18:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141433/"
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/2250667/cine-real-e-t/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
-      {
-        "title": "E.T. the Extra-Terrestrial",
-        "director": ["Steven Spielberg"],
-        "cast": [
-          "Dee Wallace",
-          "Henry Thomas",
-          "Peter Coyote",
-          "Robert MacNaughton",
-          "Drew Barrymore"
-        ],
-        "year": 1982
-      }
-    ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-10T19:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141023/",
-        "attributes": ["16mm"]
-      },
-      {
-        "dateTime": "2020-12-17T19:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141027/",
-        "attributes": ["16mm"]
-      },
-      {
-        "dateTime": "2020-12-20T15:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141031/",
-        "attributes": ["16mm"]
-      }
-    ]
+    "isFeatured": true
   },
   {
     "url": "https://thecastlecinema.com/programme/4371/elf/",
@@ -311,6 +213,7 @@
       "url": "https://thecastlecinema.com",
       "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
       "email": "hello@thecastlecinema.com",
+      "type": "cinema",
       "ref": "the-castle-cinema"
     },
     "films": [
@@ -332,11 +235,7 @@
         "link": "https://thecastlecinema.com/bookings/3141988/"
       },
       {
-        "dateTime": "2020-12-24T11:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141421/"
-      },
-      {
-        "dateTime": "2020-12-23T11:30:00.000Z",
+        "dateTime": "2020-12-22T11:00:00.000Z",
         "link": "https://thecastlecinema.com/bookings/3141417/"
       },
       {
@@ -345,188 +244,108 @@
       },
       {
         "dateTime": "2020-12-21T18:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141411/"
+        "link": "https://thecastlecinema.com/bookings/3141411/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-19T13:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3146105/"
       },
       {
         "dateTime": "2020-12-21T16:10:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3143123/"
+        "link": "https://thecastlecinema.com/bookings/3143123/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-22T17:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3160116/"
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
       }
     ]
   },
   {
-    "url": "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+    "url": "https://thecastlecinema.com/programme/3152207/falling/",
     "provider": {
       "name": "The Castle Cinema",
       "url": "https://thecastlecinema.com",
       "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
       "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [{ "title": "The Snowman", "year": 1982 }],
-    "sessions": [
-      {
-        "dateTime": "2020-12-22T19:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141033/",
-        "attributes": ["16mm"]
-      },
-      {
-        "dateTime": "2020-12-20T14:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141029/",
-        "attributes": ["16mm"]
-      },
-      {
-        "dateTime": "2020-12-13T11:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141025/",
-        "attributes": ["16mm"]
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
       "ref": "the-castle-cinema"
     },
     "films": [
       {
-        "title": "Three Wishes For Cinderella",
-        "director": ["clav Vorl", "cek"],
+        "title": "Falling",
+        "director": ["Viggo Mortensen"],
         "cast": [
-          "Libuse Safr",
-          "nkov",
-          "Pavel Tr",
-          "vn",
-          "cek",
-          "Carola Braunbock"
+          "Lance Henriksen",
+          "Sverrir Gudnason",
+          "Viggo Mortensen",
+          "Terry Chen"
         ],
-        "year": 1973
+        "year": 2020
       }
     ],
     "sessions": [
       {
-        "dateTime": "2020-12-16T19:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3092187/"
+        "dateTime": "2020-12-11T21:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164825/"
       },
       {
-        "dateTime": "2020-12-13T13:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3092150/"
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/3141343/rare-exports/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
-      {
-        "title": "Rare Exports",
-        "director": ["Jalmari Helander"],
-        "cast": ["Jorma Tommila", "Onni Tommila", "Peeter Jakobi"],
-        "year": 2010
-      }
-    ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-15T14:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141393/"
+        "dateTime": "2020-12-12T21:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164835/"
       },
       {
         "dateTime": "2020-12-13T15:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141388/"
+        "link": "https://thecastlecinema.com/bookings/3164851/"
       },
       {
-        "dateTime": "2020-12-21T21:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141413/"
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
-      {
-        "title": "The Muppet Christmas Carol",
-        "director": ["Brian Henson"],
-        "cast": ["Dave Goelz", "Michael Caine", "Steve Whitmire"],
-        "year": 1992
-      }
-    ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-21T11:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141407/"
+        "dateTime": "2020-12-14T11:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164859/",
+        "attributes": ["5-mondays"]
       },
       {
-        "dateTime": "2020-12-19T11:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141401/"
+        "dateTime": "2020-12-14T20:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164877/",
+        "attributes": ["5-mondays"]
       },
       {
-        "dateTime": "2020-12-24T14:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141423/"
+        "dateTime": "2020-12-15T11:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164904/",
+        "attributes": ["parent-and-baby"]
       },
       {
-        "dateTime": "2020-12-14T18:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3142075/"
-      }
-    ]
-  },
-  {
-    "url": "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
-    "provider": {
-      "name": "The Castle Cinema",
-      "url": "https://thecastlecinema.com",
-      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
-      "email": "hello@thecastlecinema.com",
-      "ref": "the-castle-cinema"
-    },
-    "films": [
+        "dateTime": "2020-12-15T16:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164914/"
+      },
       {
-        "title": "It's a Wonderful Life",
-        "director": ["Frank Capra"],
-        "cast": ["James Stewart", "Donna Reed", "Lionel Barrymore"],
-        "year": 1946
+        "dateTime": "2020-12-16T15:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164953/"
       }
     ],
-    "sessions": [
-      {
-        "dateTime": "2020-12-14T21:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141391/"
-      },
-      {
-        "dateTime": "2020-12-22T13:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141415/"
-      },
-      {
-        "dateTime": "2020-12-16T13:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141397/"
-      },
-      {
-        "dateTime": "2020-12-17T11:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141399/"
-      },
-      {
-        "dateTime": "2020-12-19T13:10:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3142078/"
-      },
-      {
-        "dateTime": "2020-12-24T16:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141425/"
-      }
-    ]
+    "isFeatured": false
   },
   {
     "url": "https://thecastlecinema.com/programme/2250596/frozen-ii/",
@@ -535,6 +354,7 @@
       "url": "https://thecastlecinema.com",
       "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
       "email": "hello@thecastlecinema.com",
+      "type": "cinema",
       "ref": "the-castle-cinema"
     },
     "films": [
@@ -548,56 +368,700 @@
     "sessions": [
       {
         "dateTime": "2020-12-21T13:45:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141409/"
+        "link": "https://thecastlecinema.com/bookings/3141409/",
+        "attributes": ["5-mondays"]
       },
       {
-        "dateTime": "2020-12-20T11:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3141405/"
-      },
+        "dateTime": "2020-12-20T11:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3146001/"
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
       {
-        "dateTime": "2020-12-24T11:15:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3143125/"
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
       }
     ]
   },
   {
-    "url": "https://thecastlecinema.com/programme/3109218/cine-real-the-godfather/",
+    "url": "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
     "provider": {
       "name": "The Castle Cinema",
       "url": "https://thecastlecinema.com",
       "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
       "email": "hello@thecastlecinema.com",
+      "type": "cinema",
       "ref": "the-castle-cinema"
     },
     "films": [
       {
-        "title": "The Godfather",
-        "director": ["Francis Ford Coppola"],
-        "cast": ["Marlon Brando", "Al Pacino", "James Caan"],
-        "year": 1972
+        "title": "It's a Wonderful Life",
+        "director": ["Frank Capra"],
+        "cast": ["James Stewart", "Donna Reed", "Lionel Barrymore"],
+        "year": 1946
       }
     ],
     "sessions": [
       {
-        "dateTime": "2021-01-31T12:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3109236/",
-        "attributes": ["16mm"]
+        "dateTime": "2020-12-14T21:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141391/",
+        "attributes": ["5-mondays"]
       },
       {
-        "dateTime": "2021-01-24T12:30:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3109232/",
-        "attributes": ["16mm"]
+        "dateTime": "2020-12-17T11:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141399/",
+        "attributes": ["parent-and-baby"]
       },
       {
-        "dateTime": "2021-01-28T19:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3109234/",
-        "attributes": ["16mm"]
+        "dateTime": "2020-12-19T13:10:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3142078/"
       },
       {
-        "dateTime": "2021-01-21T19:00:00.000Z",
-        "link": "https://thecastlecinema.com/bookings/3109230/",
-        "attributes": ["16mm"]
+        "dateTime": "2020-12-22T15:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141425/"
+      },
+      {
+        "dateTime": "2020-12-21T21:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3146080/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-16T13:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141397/"
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
       }
     ]
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "Kirikou and the Sorceress",
+        "director": ["Michel Ocelot"],
+        "year": 1998
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-12T11:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141384/"
+      },
+      {
+        "dateTime": "2020-12-28T11:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141427/",
+        "attributes": ["5-mondays"]
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "La Belle et la Bete",
+        "director": ["Jean Cocteau", "Rene Clement"],
+        "cast": ["Jean Marais", "Josette Day"],
+        "year": 1946
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-19T16:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141403/"
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3141342/labyrinth/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "Labyrinth",
+        "director": ["Jim Henson"],
+        "cast": ["David Bowie", "Jennifer Connelly"],
+        "year": 1986
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-15T18:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141395/"
+      },
+      {
+        "dateTime": "2020-12-28T15:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141431/",
+        "attributes": ["5-mondays"]
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3143800/ma-raineys-black-bottom/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "Ma Rainey’s Black Bottom",
+        "director": ["George C. Wolfe"],
+        "cast": ["Viola Davis", "Chadwick Boseman", "Glynn Turman"],
+        "year": 2020
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-12T16:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164827/"
+      },
+      {
+        "dateTime": "2020-12-13T13:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164837/"
+      },
+      {
+        "dateTime": "2020-12-14T11:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164861/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-15T13:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164908/"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "Pan's Labyrinth",
+        "director": ["Guillermo Del Toro"],
+        "cast": ["Ariadna Gil", "Ivana Baquero", "Sergi López"],
+        "year": 2006
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-12T16:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141386/"
+      },
+      {
+        "dateTime": "2020-12-28T18:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141433/",
+        "attributes": ["5-mondays"]
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3143801/patrick/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "Patrick",
+        "director": ["Tim Mielants"],
+        "cast": ["Hannah Hoekstra", "Jemaine Clement", "Kevin Janssens"],
+        "year": 2020
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-12T20:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164833/"
+      },
+      {
+        "dateTime": "2020-12-13T16:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164853/"
+      },
+      {
+        "dateTime": "2020-12-14T13:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164863/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-14T18:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164875/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-15T16:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3164912/"
+      }
+    ],
+    "isFeatured": false
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "The Muppet Christmas Carol",
+        "director": ["Brian Henson"],
+        "cast": ["Dave Goelz", "Michael Caine", "Steve Whitmire"],
+        "year": 1992
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-21T11:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141407/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-19T11:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141401/"
+      },
+      {
+        "dateTime": "2020-12-14T18:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3142075/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-22T13:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3141423/"
+      },
+      {
+        "dateTime": "2020-12-12T13:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3146102/"
+      },
+      {
+        "dateTime": "2020-12-20T11:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3147641/"
+      },
+      {
+        "dateTime": "2020-12-22T20:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3167025/"
+      },
+      {
+        "dateTime": "2020-12-21T16:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3167005/",
+        "attributes": ["5-mondays"]
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "Three Wishes For Cinderella",
+        "director": ["Václav Vorlícek"],
+        "cast": ["Libuse Safránková", "Pavel Trávnícek", "Carola Braunbock"],
+        "year": 1973
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-16T19:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3092187/"
+      },
+      {
+        "dateTime": "2020-12-13T13:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3092150/"
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "Wolfwalkers",
+        "director": ["Ross Stewart", "Tomm Moore"],
+        "cast": ["Honor Kneafsey", "Sean Bean", "Eva Whittaker"],
+        "year": 2020
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-14T16:10:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3148326/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-13T11:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3142104/"
+      },
+      {
+        "dateTime": "2020-12-28T11:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3148330/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-21T11:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3146078/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-21T13:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3148328/",
+        "attributes": ["5-mondays"]
+      }
+    ],
+    "isFeatured": false,
+    "collections": [
+      {
+        "name": "Enchanted Castle",
+        "description": "Winter fables, fairy tales and a feast of festive faves",
+        "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+        "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+        "programme": [
+          "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+          "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+          "https://thecastlecinema.com/programme/4371/elf/",
+          "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+          "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+          "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+          "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+          "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+          "https://thecastlecinema.com/programme/3141342/labyrinth/",
+          "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+          "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+          "https://thecastlecinema.com/programme/3141361/coraline/"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://thecastlecinema.com/programme/3165214/wonder-woman-1984/",
+    "provider": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema",
+      "ref": "the-castle-cinema"
+    },
+    "films": [
+      {
+        "title": "Wonder Woman 1984",
+        "director": ["Patty Jenkins"],
+        "cast": ["Pedro Pascal", "Gal Gadot", "Connie Nielsen"],
+        "year": 2020
+      }
+    ],
+    "sessions": [
+      {
+        "dateTime": "2020-12-18T19:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3166957/"
+      },
+      {
+        "dateTime": "2020-12-18T13:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3166959/"
+      },
+      {
+        "dateTime": "2020-12-18T21:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3166961/"
+      },
+      {
+        "dateTime": "2020-12-18T15:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3166963/"
+      },
+      {
+        "dateTime": "2020-12-28T21:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3167053/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-20T19:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3166990/"
+      },
+      {
+        "dateTime": "2020-12-20T16:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3166992/"
+      },
+      {
+        "dateTime": "2020-12-19T20:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3166965/"
+      },
+      {
+        "dateTime": "2020-12-22T20:30:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3167023/"
+      },
+      {
+        "dateTime": "2020-12-19T16:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3166967/"
+      },
+      {
+        "dateTime": "2020-12-22T11:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3167027/"
+      },
+      {
+        "dateTime": "2020-12-21T18:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3167007/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-21T21:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3167009/",
+        "attributes": ["5-mondays"]
+      },
+      {
+        "dateTime": "2020-12-16T18:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3165362/"
+      },
+      {
+        "dateTime": "2020-12-16T21:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3165364/"
+      },
+      {
+        "dateTime": "2020-12-17T16:00:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3165368/"
+      },
+      {
+        "dateTime": "2020-12-16T15:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3165366/"
+      },
+      {
+        "dateTime": "2020-12-17T11:45:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3165370/"
+      },
+      {
+        "dateTime": "2020-12-17T18:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3165372/"
+      },
+      {
+        "dateTime": "2020-12-17T21:15:00.000Z",
+        "link": "https://thecastlecinema.com/bookings/3165374/"
+      }
+    ],
+    "isFeatured": true
   }
 ]

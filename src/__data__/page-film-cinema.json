@@ -1,37 +1,52 @@
 {
-  "url": "https://thecastlecinema.com/programme/3141343/rare-exports/",
+  "url": "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
   "provider": {
     "name": "The Castle Cinema",
     "url": "https://thecastlecinema.com",
     "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
     "email": "hello@thecastlecinema.com",
-    "ref": "the-castle-cinema",
-    "type": "cinema"
+    "type": "cinema",
+    "ref": "the-castle-cinema"
   },
-  "films": [
-    {
-      "title": "Rare Exports",
-      "director": ["Jalmari Helander"],
-      "cast": ["Jorma Tommila", "Onni Tommila", "Peeter Jakobi"],
-      "year": 2010
-    }
-  ],
+  "films": [{ "title": "The Snowman", "year": 1982 }],
   "sessions": [
     {
-      "dateTime": "2020-12-15T14:15:00.000Z",
-      "link": "https://thecastlecinema.com/bookings/3141393/",
-      "attributes": []
+      "dateTime": "2020-12-22T19:00:00.000Z",
+      "link": "https://thecastlecinema.com/bookings/3141033/",
+      "attributes": ["16mm"]
     },
     {
-      "dateTime": "2020-12-13T15:45:00.000Z",
-      "link": "https://thecastlecinema.com/bookings/3141388/",
-      "attributes": []
+      "dateTime": "2020-12-20T14:00:00.000Z",
+      "link": "https://thecastlecinema.com/bookings/3141029/",
+      "attributes": ["16mm"]
     },
     {
-      "dateTime": "2020-12-21T21:00:00.000Z",
-      "link": "https://thecastlecinema.com/bookings/3141413/",
-      "attributes": []
+      "dateTime": "2020-12-13T11:30:00.000Z",
+      "link": "https://thecastlecinema.com/bookings/3141025/",
+      "attributes": ["16mm"]
     }
   ],
-  "isFeatured": false
+  "isFeatured": false,
+  "collections": [
+    {
+      "name": "Enchanted Castle",
+      "description": "Winter fables, fairy tales and a feast of festive faves",
+      "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+      "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/",
+      "programme": [
+        "https://thecastlecinema.com/programme/3142080/wolfwalkers/",
+        "https://thecastlecinema.com/programme/3141354/kirikou-and-the-sorceress/",
+        "https://thecastlecinema.com/programme/4371/elf/",
+        "https://thecastlecinema.com/programme/3141350/the-muppet-christmas-carol/",
+        "https://thecastlecinema.com/programme/3141344/pan-s-labyrinth/",
+        "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+        "https://thecastlecinema.com/programme/3078318/three-wishes-for-cinderella/",
+        "https://thecastlecinema.com/programme/4375/it-s-a-wonderful-life/",
+        "https://thecastlecinema.com/programme/3141342/labyrinth/",
+        "https://thecastlecinema.com/programme/3141346/la-belle-et-la-bete/",
+        "https://thecastlecinema.com/programme/2250596/frozen-ii/",
+        "https://thecastlecinema.com/programme/3141361/coraline/"
+      ]
+    }
+  ]
 }
