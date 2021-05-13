@@ -1,0 +1,24 @@
+{
+  "name": "agents-core-e2e-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test:js": "node main",
+    "test:ts": "tsc --noEmit main",
+    "test:jest:js": "NODE_OPTIONS=--experimental-vm-modules jest main.test.js",
+    "test:jest:ts": "jest -c ts-jest.config.json main.test.ts",
+    "test": "yarn test:js && yarn test:ts && yarn test:jest:js && yarn test:jest:ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "4.2.4"
+  },
+  "dependencies": {
+    "@filmcalendar/agents-core": "^1.0.0",
+    "@filmcalendar/types": "1.5.0"
+  }
+}
