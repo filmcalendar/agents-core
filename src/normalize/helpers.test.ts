@@ -39,6 +39,7 @@ describe('normalizer helpers', () => {
       'post|https://whatson.bfi.org.uk/Online/mapSelect.asp|boset::wsmap::seatmap::performance_ids=6e7397cd-ac2a-43ae-9af7-5ddbd6fe2d7b,createbo::wsmap=1|',
     ],
   ])('serializes bookingLink: %s', (bookingLink, expected) => {
+    expect.assertions(1);
     const result = serializeBookingLink(bookingLink);
     expect(result).toBe(expected);
   });
@@ -80,6 +81,7 @@ describe('normalizer helpers', () => {
       '2020-01-13T18:10:00.000Z|post|https://whatson.bfi.org.uk/Online/mapSelect.asp|boset::wsmap::seatmap::performance_ids=6e7397cd-ac2a-43ae-9af7-5ddbd6fe2d7b,createbo::wsmap=1||audio-description',
     ],
   ])('serializes session: %s', (_, session, expected) => {
+    expect.assertions(1);
     const result = serializeSession(session as FC.Agent.Session);
     expect(result).toBe(expected);
   });

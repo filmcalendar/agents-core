@@ -1,11 +1,13 @@
 import AJV from 'ajv';
+import addFormats from 'ajv-formats';
+import type { ErrorObject, ValidateFunction } from 'ajv';
 import type * as FC from '@filmcalendar/types';
 import schemas from '@filmcalendar/schemas';
 
 class ValidationError extends Error {
   public body: string;
 
-  constructor(message: string, errors?: AJV.ErrorObject[] | null) {
+  constructor(message: string, errors?: ErrorObject[] | null) {
     super(message);
     this.name = 'ValidationError';
     this.body = JSON.stringify(errors, null, 2);
@@ -18,10 +20,11 @@ type ValidateFn = (
 ) => boolean | never;
 const validateReport: ValidateFn = (agent, report) => {
   const ajv = new AJV({ allErrors: true });
+  addFormats(ajv);
   const { type } = agent.register();
 
   let isValid;
-  let validate: AJV.ValidateFunction;
+  let validate: ValidateFunction;
   switch (type) {
     case 'films':
     default:

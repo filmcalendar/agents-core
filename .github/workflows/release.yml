@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
         with:
-          node-version: 15
+          node-version: 16
       - uses: actions/cache@v2
         with:
           path: node_modules
@@ -44,7 +44,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
       - uses: actions/setup-node@v1
         with:
-          node-version: 15
+          node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: yarn
       - run: yarn build

@@ -7,63 +7,59 @@
   "license": "MIT",
   "keywords": [],
   "bin": {
-    "fc-agents-docker-run-local": "sh/docker-run-local.sh"
+    "fc-agents-docker-run-local": "scripts/docker-run-local.sh"
   },
   "files": [
     "dist/index.js",
     "dist/index.d.ts"
   ],
-  "main": "dist/index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
   "types": "dist/index.d.ts",
-  "source": "src/index.ts",
   "dependencies": {
-    "@filmcalendar/schemas": "1.5.0",
-    "@filmcalendar/types": "1.4.0",
-    "@sindresorhus/slugify": "1.1.0",
-    "@tuplo/series-with": "1.0.0",
-    "ajv": "6.12.6",
+    "@filmcalendar/schemas": "1.6.0",
+    "@filmcalendar/types": "1.5.0",
+    "@sindresorhus/slugify": "2.1.0",
+    "@tuplo/series-with": "1.2.0",
+    "ajv": "8.3.0",
+    "ajv-formats": "2.1.0",
     "clean-deep": "3.4.0",
-    "date-fns": "2.16.1",
+    "date-fns": "2.21.3",
     "md5": "2.3.0",
     "normalizr": "3.6.1",
-    "yargs-parser": "20.2.4"
+    "yargs-parser": "20.2.7"
   },
   "devDependencies": {
     "@types/ajv": "1.0.0",
-    "@types/jest": "26.0.19",
-    "@types/md5": "2.2.1",
-    "@types/node": "14.14.10",
-    "@typescript-eslint/eslint-plugin": "4.9.0",
-    "@typescript-eslint/parser": "4.9.0",
-    "commitizen": "4.2.2",
-    "cz-conventional-changelog": "3.3.0",
-    "eslint": "7.15.0",
-    "eslint-config-airbnb-typescript": "12.0.0",
-    "eslint-config-prettier": "7.0.0",
+    "@types/jest": "26.0.23",
+    "@types/md5": "2.3.0",
+    "@types/node": "15.0.3",
+    "@typescript-eslint/eslint-plugin": "4.23.0",
+    "@typescript-eslint/parser": "4.23.0",
+    "esbuild": "0.11.20",
+    "eslint": "7.26.0",
+    "eslint-config-airbnb-typescript": "12.3.1",
+    "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jest": "24.1.3",
-    "husky": "4.3.4",
+    "eslint-plugin-jest": "24.3.6",
     "jest": "26.6.3",
-    "microbundle": "0.12.4",
-    "prettier": "2.2.1",
-    "pretty-quick": "3.1.0",
+    "prettier": "2.3.0",
     "rimraf": "3.0.2",
-    "ts-jest": "26.4.4",
-    "typescript": "4.1.2"
+    "ts-jest": "26.5.6",
+    "typescript": "4.2.4"
   },
   "scripts": {
-    "build": "bash sh/build.sh",
+    "build": "bash scripts/build.sh",
     "ci:test": "jest --ci",
     "ci:test:coverage": "jest --ci --coverage",
     "lint": "eslint src/**/*.ts",
     "test": "jest --watch",
     "ts-check": "tsc --noEmit",
     "validate": "yarn lint; yarn ts-check"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "eslintConfig": {
     "extends": [
@@ -108,19 +104,12 @@
       "<rootDir>/src"
     ],
     "testEnvironment": "node",
-    "moduleDirectories": [
-      "node_modules",
-      "."
-    ],
     "transform": {
       "^.+\\.(t|j)sx?$": "ts-jest"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "pretty-quick --staged"
-    }
+    },
+    "transformIgnorePatterns": [
+      "<roodDir>/node_modules/(?!@tuplo)"
+    ]
   },
   "prettier": {
     "singleQuote": true,

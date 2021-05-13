@@ -5,10 +5,10 @@ import mockReportFilmLiveTv from '../__data__/report-film-live-tv.json';
 import mockReportFilmStreaming from '../__data__/report-film-streaming.json';
 import validate from '.';
 
-const mockAgent = ({
+const mockAgent = {
   ref: 'agent-1',
   register: () => ({ type: 'films' }),
-} as unknown) as FC.Agent.Agent;
+} as unknown as FC.Agent.Agent;
 
 describe('validate', () => {
   it('validates a cinema page', () => {

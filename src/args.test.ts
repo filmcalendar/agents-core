@@ -23,6 +23,7 @@ describe('program arguments', () => {
       { action: 'scrape', agent: 'the-castle' },
     ],
   ])('parses command line arguments: %s', (_, argv, expected) => {
+    expect.assertions(1);
     const result = args(argv);
     expect(result).toStrictEqual(expected as FC.Scraper.Options);
   });

@@ -48,6 +48,7 @@ describe('cinema job', () => {
       },
     ],
   ])('adds ref to provider: %s', (_, provider, expected) => {
+    expect.assertions(1);
     const result = refProvider(provider);
     expect(result).toStrictEqual(expected);
   });
@@ -69,9 +70,10 @@ describe('cinema job', () => {
     dateNowSpy.mockRestore();
   });
 
-  it.each([['url'], ['provider'], ['films'], ['sessions']])(
+  it.each(['url', 'provider', 'films', 'sessions'])(
     'is valid page: no %s',
     (field) => {
+      expect.assertions(1);
       const mockInvalidPage = JSON.parse(JSON.stringify(mockPage));
       delete mockInvalidPage[field];
       const result = isValidPage(mockInvalidPage);
