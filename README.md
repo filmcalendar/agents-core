@@ -2,8 +2,11 @@
 
 <p>
   <img src="https://img.shields.io/npm/v/@filmcalendar/agents-core">
-  <a href="https://codecov.io/gh/filmcalendar/agents-core">
-    <img src="https://codecov.io/gh/filmcalendar/agents-core/branch/main/graph/badge.svg?token=bpP3FyzgXg"/>
+  <a href="https://codeclimate.com/github/filmcalendar/agents-core/maintainability">
+    <img src="https://api.codeclimate.com/v1/badges/ff91dc7fd2576f0d4bc7/maintainability" />
+  </a>
+  <a href="https://codeclimate.com/github/filmcalendar/agents-core/test_coverage">
+    <img src="https://api.codeclimate.com/v1/badges/ff91dc7fd2576f0d4bc7/test_coverage" />
   </a>
   <img src="https://github.com/filmcalendar/agents-core/workflows/Build/badge.svg">
 </p>
