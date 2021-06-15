@@ -1,8 +1,9 @@
 import AJV from 'ajv';
 import addFormats from 'ajv-formats';
+import schemas from '@filmcalendar/schemas';
+
 import type { ErrorObject, ValidateFunction } from 'ajv';
 import type * as FC from '@filmcalendar/types';
-import schemas from '@filmcalendar/schemas';
 
 class ValidationError extends Error {
   public body: string;
