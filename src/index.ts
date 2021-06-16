@@ -9,6 +9,8 @@ type ProgramFn = (agents: Record<string, FC.Agent.Agent>) => Promise<void>;
 const program: ProgramFn = async (agents) => {
   const options = args(process.argv);
 
+  process.env.TZ = 'utc';
+
   switch (options.action) {
     case 'list':
       console.log(serializeAgents(agents));
