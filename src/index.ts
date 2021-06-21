@@ -6,8 +6,8 @@ import args from './args';
 import { serializeAgents } from './list';
 import job from './job';
 
-type ProgramFn = (agents: Record<string, FC.Agent.Agent>) => Promise<void>;
-const program: ProgramFn = async (agents) => {
+type Agents = Record<string, FC.Agent.Agent>;
+async function program(agents: Agents): Promise<void> {
   const options = args(process.argv);
 
   process.env.TZ = 'utc';
@@ -35,6 +35,6 @@ const program: ProgramFn = async (agents) => {
     default:
       throw new Error(`Program action ${options.action} not supported`);
   }
-};
+}
 
 export default program;

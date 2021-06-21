@@ -14,6 +14,7 @@ const mockAgent = {
 describe('list agents', () => {
   it('list agents using ref field', () => {
     expect.assertions(1);
+
     const agents = {
       RefA: { ref: 'ref-a', ...mockAgent },
       RefB: { ref: 'ref-b', ...mockAgent },
@@ -29,6 +30,7 @@ describe('list agents', () => {
 
   it('throws an exception if it finds duplicate ref', () => {
     expect.assertions(1);
+
     const agents = {
       RefA: { ref: 'ref-a', ...mockAgent },
       RefB: { ref: 'ref-b', ...mockAgent },
@@ -42,6 +44,7 @@ describe('list agents', () => {
 
   it("formats the agent's list to be printed on the command line", () => {
     expect.assertions(1);
+
     const agents = {
       RefA: { ref: 'ref-a', ...mockAgent },
       RefB: { ref: 'ref-b', ...mockAgent },

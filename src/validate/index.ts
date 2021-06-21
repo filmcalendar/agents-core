@@ -15,11 +15,10 @@ class ValidationError extends Error {
   }
 }
 
-type ValidateFn = (
+function validateReport(
   agent: FC.Agent.Agent,
-  data: FC.Agent.Dispatch
-) => boolean | never;
-const validateReport: ValidateFn = (agent, report) => {
+  report: FC.Agent.Dispatch
+): boolean | never {
   const ajv = new AJV({ allErrors: true });
   addFormats(ajv);
   const { type } = agent.register();
@@ -38,6 +37,6 @@ const validateReport: ValidateFn = (agent, report) => {
   }
 
   return true;
-};
+}
 
 export default validateReport;

@@ -55,6 +55,7 @@ describe('cinema job', () => {
 
   it('removes sessions in the past', () => {
     expect.assertions(1);
+
     const dateNowSpy = jest.spyOn(Date, 'now').mockReturnValue(1606072275000);
     const result = onlyFutureSessions(mockPage);
 
@@ -74,15 +75,18 @@ describe('cinema job', () => {
     'is valid page: no %s',
     (field) => {
       expect.assertions(1);
+
       const mockInvalidPage = JSON.parse(JSON.stringify(mockPage));
       delete mockInvalidPage[field];
       const result = isValidPage(mockInvalidPage);
+
       expect(result).toBe(false);
     }
   );
 
   it('removes temporary attributes', () => {
     expect.assertions(1);
+
     const result = removeTemporaryAttributes(mockPage);
 
     const expected = JSON.parse(JSON.stringify(mockPage));
@@ -94,6 +98,7 @@ describe('cinema job', () => {
     expect.assertions(1);
     // 2020-12-09T12:40:26.000Z
     const dateNowSpy = jest.spyOn(Date, 'now').mockReturnValue(1607517626000);
+
     const mockPageWithPastAvailability = JSON.parse(JSON.stringify(mockPage));
     delete mockPageWithPastAvailability.sessions;
     mockPageWithPastAvailability.availability = {
@@ -108,6 +113,7 @@ describe('cinema job', () => {
 
   it('gets collections for a page', () => {
     expect.assertions(2);
+
     const result = getCollectionsForPage(mockCollections)(mockPage);
 
     expect(result.collections).toHaveLength(2);

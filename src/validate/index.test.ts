@@ -13,6 +13,7 @@ const mockAgent = {
 describe('validate', () => {
   it('validates a cinema page', () => {
     expect.assertions(1);
+
     const result = validate(
       mockAgent,
       mockReportFilmCinema as FC.Agent.Dispatch
@@ -23,6 +24,7 @@ describe('validate', () => {
 
   it('validates a live-tv page', () => {
     expect.assertions(1);
+
     const result = validate(
       mockAgent,
       mockReportFilmLiveTv as FC.Agent.Dispatch
@@ -33,6 +35,7 @@ describe('validate', () => {
 
   it('validates a streaming page', () => {
     expect.assertions(1);
+
     const result = validate(
       mockAgent,
       mockReportFilmStreaming as FC.Agent.Dispatch
