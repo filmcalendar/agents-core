@@ -586,10 +586,12 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@tuplo/series-with@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@tuplo/series-with/-/series-with-1.4.0.tgz#ec8e922bbf1788132a3720423e2621d9aaba4304"
-  integrity sha512-wQKYaUQaq7aAHX4qQw5oYaO6k5tz30EjbK+IT5Wooqb3NJn28jqMxlc7MI7CwWsvnRd1MuwLwEoBwZIzNR9EQA==
+"@tuplo/unhandler@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@tuplo/unhandler/-/unhandler-1.14.0.tgz#17abd1381b42fd9b417337e417ce323512a9587d"
+  integrity sha512-V5oua+Nmpde1Pm1Ul4WPV64h0VhgKtn2fJnGIKOYDw8rVsWkJcOgPGNxbv5NVXVpaH62NXpMzIibQ2zbEb1EPQ==
+  dependencies:
+    node-fetch "2.6.1"
 
 "@types/ajv@1.0.0":
   version "1.0.0"
@@ -2979,6 +2981,11 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
+
+node-fetch@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-int64@^0.4.0:
   version "0.4.0"

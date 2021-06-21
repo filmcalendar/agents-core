@@ -4,6 +4,7 @@
     "filmcalendar",
     "normalizr",
     "sindresorhus",
-    "tuplo"
+    "tuplo",
+    "unhandler"
   ]
 }

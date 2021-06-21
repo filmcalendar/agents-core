@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import type * as FC from '@filmcalendar/types';
+import { unhandler } from '@tuplo/unhandler';
 
 import args from './args';
 import { serializeAgents } from './list';
@@ -10,6 +11,17 @@ const program: ProgramFn = async (agents) => {
   const options = args(process.argv);
 
   process.env.TZ = 'utc';
+
+  unhandler({
+    appName: `fc-agents-${process.env.FC_COUNTRY}`,
+    providers: {
+      github: {
+        user: process.env.FC_GIT_USER as string,
+        repo: process.env.FC_GIT_REPO_SRC as string,
+        token: process.env.FC_GIT_PASSWORD as string,
+      },
+    },
+  });
 
   switch (options.action) {
     case 'list':
