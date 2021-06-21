@@ -22,6 +22,7 @@ docker run -i \
   --name "$container_name" \
   --env FC_COUNTRY="${FC_COUNTRY}" \
   --env FC_GIT_PASSWORD="${FC_GIT_PASSWORD}" \
+  --env FC_GIT_HOST="${FC_GIT_HOST}" \
   --env FC_GIT_REPO_DATA="${FC_GIT_REPO_DATA}-${FC_COUNTRY}" \
   --env FC_GIT_REPO_SRC="${FC_GIT_REPO_SRC}-${FC_COUNTRY}" \
   --env FC_GIT_USER_EMAIL="${FC_GIT_USER_EMAIL}" \
