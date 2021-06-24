@@ -90,9 +90,14 @@ export function scrapeAgent(agent: FC.Agent.Agent): ScrapeProviderFn {
     const seasons = await getSeasons(agent, provider);
 
     const { programme, _data } = await agent.programme(provider);
-    const pages = await seriesWith(programme, (url) =>
-      agent.page(url, provider, _data)
-    ).then((results) => results.filter(Boolean) as FC.Agent.Page[]);
+    const pages = await seriesWith(programme, async (url) => {
+      if (process.env.NODE_ENV === 'development') {
+        // eslint-disable-next-line
+        console.log(url);
+      }
+
+      return agent.page(url, provider, _data);
+    }).then((results) => results.filter(Boolean) as FC.Agent.Page[]);
 
     return pages
       .map((page) => ({ ...page, isFeatured: featured.includes(page.url) }))

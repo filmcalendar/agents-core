@@ -12,16 +12,18 @@ async function program(agents: Agents): Promise<void> {
 
   process.env.TZ = 'utc';
 
-  unhandler({
-    appName: options.agent,
-    providers: {
-      github: {
-        user: process.env.FC_GIT_USER as string,
-        repo: process.env.FC_GIT_REPO_SRC as string,
-        token: process.env.FC_GIT_PASSWORD as string,
+  if (process.env.NODE_ENV !== 'development') {
+    unhandler({
+      appName: options.agent,
+      providers: {
+        github: {
+          user: process.env.FC_GIT_USER as string,
+          repo: process.env.FC_GIT_REPO_SRC as string,
+          token: process.env.FC_GIT_PASSWORD as string,
+        },
       },
-    },
-  });
+    });
+  }
 
   switch (options.action) {
     case 'list':
