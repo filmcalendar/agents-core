@@ -13,7 +13,7 @@ async function program(agents: Agents): Promise<void> {
   process.env.TZ = 'utc';
 
   unhandler({
-    appName: `fc-agents-${process.env.FC_COUNTRY}`,
+    appName: options.agent,
     providers: {
       github: {
         user: process.env.FC_GIT_USER as string,
