@@ -29,7 +29,7 @@
         "attributes": ["16mm"]
       }
     },
-    "collections": {
+    "seasons": {
       "enchanted-castle": {
         "ref": "enchanted-castle",
         "name": "Enchanted Castle",
@@ -49,7 +49,7 @@
           "a8c19609c37de5981a14b2a54e6be3d6"
         ],
         "isFeatured": false,
-        "collections": ["enchanted-castle"]
+        "seasons": ["enchanted-castle"]
       }
     }
   },

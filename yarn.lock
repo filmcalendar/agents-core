@@ -324,20 +324,20 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@filmcalendar/schemas@1.10.0":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@filmcalendar/schemas/-/schemas-1.10.0.tgz#4e48f3a0975e31a701681dec8c6969e6c7c34318"
-  integrity sha512-Vbfw2Ejqp6n2SUfFQEjyqF1aOqvAMsjmwVoOWm95laGHI83r0v4X2RL1QZHiDJECZTcygHQJxji6db0I96dDiQ==
+"@filmcalendar/schemas@1.11.0":
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/@filmcalendar/schemas/-/schemas-1.11.0.tgz#eeea9919912eb86337452f6f92fa20fe30055283"
+  integrity sha512-GQJtL5xh3CUzpssApNFTfsQRZzIL174618CZIC0E4tUszvSRx7raN39sh+Uy3UTG9lNLTvEjqlZtMJVxHO49AQ==
   dependencies:
-    "@filmcalendar/types" "1.8.0"
+    "@filmcalendar/types" "1.9.0"
     "@sindresorhus/slugify" "2.1.0"
     md5 "2.3.0"
     normalizr "3.6.1"
 
-"@filmcalendar/types@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@filmcalendar/types/-/types-1.8.0.tgz#65859b0d562fbe937ca1f6168aef5f3900b2604f"
-  integrity sha512-kkwSEsC4Us//w6TyDuGfViqSszszLd+NbEm9gCH7WOdE+BGYvgWVu3l6ujgMjxHPRDk6HEBr7HRJmaUkU3rtSw==
+"@filmcalendar/types@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@filmcalendar/types/-/types-1.9.0.tgz#07f9c7e5420ad5e93dd6d9053479875be2623c3c"
+  integrity sha512-QXTM8/FLM0lUYYHj6NA3FmgSihwJltk+BDhqLTK6ufcPnTYLTajaLqyh1ZRYufOHAEgT/M/kqm7T/CIQU0lhwA==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"

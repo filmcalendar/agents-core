@@ -1,11 +1,11 @@
 import type * as FC from '@filmcalendar/types';
 
 import mockPageRaw from './__data__/page.json';
-import mockCollectionsRaw from './__data__/collections.json';
+import mockSeasonsRaw from './__data__/seasons.json';
 
 import {
   refProvider,
-  getCollectionsForPage,
+  getSeasonsForPage,
   onlyFutureSessions,
   onlyFutureEndAvailability,
   isValidPage,
@@ -13,7 +13,7 @@ import {
 } from './films';
 
 const mockPage = mockPageRaw as FC.Agent.Page;
-const mockCollections = mockCollectionsRaw as FC.Agent.Collection[];
+const mockSeasons = mockSeasonsRaw as FC.Season[];
 
 describe('cinema job', () => {
   it.each([
@@ -111,13 +111,13 @@ describe('cinema job', () => {
     dateNowSpy.mockRestore();
   });
 
-  it('gets collections for a page', () => {
+  it('gets seasons for a page', () => {
     expect.assertions(2);
 
-    const result = getCollectionsForPage(mockCollections)(mockPage);
+    const result = getSeasonsForPage(mockSeasons)(mockPage);
 
-    expect(result.collections).toHaveLength(2);
-    const [first] = result.collections || [];
-    expect(first).toStrictEqual(mockCollections[0]);
+    expect(result.seasons).toHaveLength(2);
+    const [first] = result.seasons || [];
+    expect(first).toStrictEqual(mockSeasons[0]);
   });
 });

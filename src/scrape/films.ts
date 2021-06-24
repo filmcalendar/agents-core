@@ -21,36 +21,32 @@ export function removeTemporaryAttributes(page: FC.Agent.Page): FC.Agent.Page {
   );
 }
 
-async function getCollections(
+async function getSeasons(
   agent: FC.Agent.Agent,
   provider: FC.Provider
-): Promise<FC.Agent.Collection[]> {
-  if (!agent.collections) return [];
+): Promise<FC.Season[]> {
+  if (!agent.seasons) return [];
 
-  const { collections: collectionsUrls, _data: _collectionsData } =
-    await agent.collections(provider);
+  const { seasonUrls, _data: _seasonsData } = await agent.seasons(provider);
 
-  const collectionFn =
-    typeof agent.collection === 'undefined'
-      ? async () => ({} as FC.Agent.Collection)
-      : agent.collection;
+  const seasonFn =
+    typeof agent.season === 'undefined'
+      ? async () => ({} as FC.Season)
+      : agent.season;
 
-  return seriesWith(collectionsUrls, (url) =>
-    collectionFn(url, { _data: _collectionsData })
+  return seriesWith(seasonUrls, (url) =>
+    seasonFn(url, { _data: _seasonsData })
   );
 }
 
-type GetCollectionsForPageFn = (page: FC.Agent.Page) => FC.Agent.Page;
-type GetCollectionsForPage = (
-  collections: FC.Agent.Collection[]
-) => GetCollectionsForPageFn;
-export const getCollectionsForPage: GetCollectionsForPage =
-  (collections) => (page) => ({
-    ...page,
-    collections: collections.filter((collection) =>
-      collection.programme.includes(page.url)
-    ),
-  });
+type GetSeasonsForPageFn = (page: FC.Agent.Page) => FC.Agent.Page;
+type GetSeasonsForPage = (seasons: FC.Season[]) => GetSeasonsForPageFn;
+export const getSeasonsForPage: GetSeasonsForPage = (seasons) => (page) => ({
+  ...page,
+  seasons: seasons.filter((season) =>
+    (season.programme || []).includes(page.url)
+  ),
+});
 
 export function onlyFutureSessions(page: FC.Agent.Page): FC.Agent.Page {
   return {
@@ -91,7 +87,7 @@ export function scrapeAgent(agent: FC.Agent.Agent): ScrapeProviderFn {
       typeof agent.featured === 'undefined' ? async () => [] : agent.featured;
     const featured = await featuredFn(provider);
 
-    const collections = await getCollections(agent, provider);
+    const seasons = await getSeasons(agent, provider);
 
     const { programme, _data } = await agent.programme(provider);
     const pages = await seriesWith(programme, (url) =>
@@ -100,7 +96,7 @@ export function scrapeAgent(agent: FC.Agent.Agent): ScrapeProviderFn {
 
     return pages
       .map((page) => ({ ...page, isFeatured: featured.includes(page.url) }))
-      .map(getCollectionsForPage(collections))
+      .map(getSeasonsForPage(seasons))
       .map(removeTemporaryAttributes)
       .map(onlyFutureSessions)
       .filter(onlyFutureEndAvailability)
