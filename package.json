@@ -21,7 +21,7 @@
   "exports": "./dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@filmcalendar/schemas": "1.9.0",
+    "@filmcalendar/schemas": "1.10.0",
     "@filmcalendar/types": "1.8.0",
     "@sindresorhus/slugify": "2.1.0",
     "@tuplo/series-with": "1.6.1",
