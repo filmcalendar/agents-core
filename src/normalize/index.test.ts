@@ -9,10 +9,10 @@ import mockReportFilmStreaming from '../__data__/report-film-streaming.json';
 
 import normalize from '.';
 
-const mockAgent = ({
+const mockAgent = {
   ref: 'agent-1',
   register: () => ({ type: 'films' }),
-} as unknown) as FC.Agent.Agent;
+} as unknown as FC.Agent.Agent;
 
 describe('normalize', () => {
   it('normalizes a cinema page', () => {
@@ -40,7 +40,7 @@ describe('normalize', () => {
     ] as FC.Agent.Page[]);
 
     expect(result).toStrictEqual(
-      (mockReportFilmStreaming as unknown) as FC.Agent.Dispatch
+      mockReportFilmStreaming as unknown as FC.Agent.Dispatch
     );
   });
 });

@@ -19,6 +19,7 @@ function validateReport(
   agent: FC.Agent.Agent,
   report: FC.Agent.Dispatch
 ): boolean | never {
+  const { jsonSchema } = schemas;
   const ajv = new AJV({ allErrors: true });
   addFormats(ajv);
   const { type } = agent.register();
@@ -28,7 +29,7 @@ function validateReport(
   switch (type) {
     case 'films':
     default:
-      validate = ajv.compile(schemas.films);
+      validate = ajv.compile(jsonSchema.films);
       isValid = validate(report);
   }
 
