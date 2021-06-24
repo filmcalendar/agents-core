@@ -17,7 +17,7 @@ class ValidationError extends Error {
 
 function validateReport(
   agent: FC.Agent.Agent,
-  report: FC.Agent.Dispatch
+  report: FC.Dispatch.Dispatch
 ): boolean | never {
   const { jsonSchema } = schemas;
   const ajv = new AJV({ allErrors: true });

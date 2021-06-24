@@ -21,13 +21,13 @@ describe('cinema job', () => {
       'single venue',
       {
         name: 'The Foo Cinema',
-        type: 'cinema' as FC.Agent.ProviderType,
+        type: 'cinema' as FC.ProviderType,
         url: 'https://thefoocinema.com',
       },
       {
         ref: 'the-foo-cinema',
         name: 'The Foo Cinema',
-        type: 'cinema' as FC.Agent.ProviderType,
+        type: 'cinema' as FC.ProviderType,
         url: 'https://thefoocinema.com',
       },
     ],
@@ -37,14 +37,14 @@ describe('cinema job', () => {
         name: 'Bar',
         url: 'https://bigchain.com/bar',
         chain: 'Big Chain',
-        type: 'cinema' as FC.Agent.ProviderType,
+        type: 'cinema' as FC.ProviderType,
       },
       {
         ref: 'big-chain-bar',
         name: 'Bar',
         url: 'https://bigchain.com/bar',
         chain: 'Big Chain',
-        type: 'cinema' as FC.Agent.ProviderType,
+        type: 'cinema' as FC.ProviderType,
       },
     ],
   ])('adds ref to provider: %s', (_, provider, expected) => {

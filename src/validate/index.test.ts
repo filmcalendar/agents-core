@@ -16,7 +16,7 @@ describe('validate', () => {
 
     const result = validate(
       mockAgent,
-      mockReportFilmCinema as FC.Agent.Dispatch
+      mockReportFilmCinema as FC.Dispatch.Dispatch
     );
 
     expect(result).toBe(true);
@@ -27,7 +27,7 @@ describe('validate', () => {
 
     const result = validate(
       mockAgent,
-      mockReportFilmLiveTv as FC.Agent.Dispatch
+      mockReportFilmLiveTv as FC.Dispatch.Dispatch
     );
 
     expect(result).toBe(true);
@@ -38,7 +38,7 @@ describe('validate', () => {
 
     const result = validate(
       mockAgent,
-      mockReportFilmStreaming as FC.Agent.Dispatch
+      mockReportFilmStreaming as FC.Dispatch.Dispatch
     );
 
     expect(result).toBe(true);

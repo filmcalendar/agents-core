@@ -17,30 +17,33 @@ const mockAgent = {
 describe('normalize', () => {
   it('normalizes a cinema page', () => {
     expect.assertions(1);
+
     const result = normalize(mockAgent, [
       mockPageFilmCinema,
     ] as FC.Agent.Page[]);
 
-    expect(result).toStrictEqual(mockReportFilmCinema as FC.Agent.Dispatch);
+    expect(result).toStrictEqual(mockReportFilmCinema as FC.Dispatch.Dispatch);
   });
 
   it('normalizes a live-tv page', () => {
     expect.assertions(1);
+
     const result = normalize(mockAgent, [
       mockPageFilmLiveTv,
     ] as FC.Agent.Page[]);
 
-    expect(result).toStrictEqual(mockReportFilmLiveTv as FC.Agent.Dispatch);
+    expect(result).toStrictEqual(mockReportFilmLiveTv as FC.Dispatch.Dispatch);
   });
 
   it('normalizes a streaming page', () => {
     expect.assertions(1);
+
     const result = normalize(mockAgent, [
       mockPageFilmStreaming,
     ] as FC.Agent.Page[]);
 
     expect(result).toStrictEqual(
-      mockReportFilmStreaming as unknown as FC.Agent.Dispatch
+      mockReportFilmStreaming as unknown as FC.Dispatch.Dispatch
     );
   });
 });

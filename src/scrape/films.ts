@@ -5,7 +5,7 @@ import cleanDeep from 'clean-deep';
 
 import type * as FC from '@filmcalendar/types';
 
-export function refProvider(provider: FC.Agent.Provider): FC.Agent.Provider {
+export function refProvider(provider: FC.Provider): FC.Provider {
   return {
     ...provider,
     ref: [provider.chain, provider.name]
@@ -23,7 +23,7 @@ export function removeTemporaryAttributes(page: FC.Agent.Page): FC.Agent.Page {
 
 async function getCollections(
   agent: FC.Agent.Agent,
-  provider: FC.Agent.Provider
+  provider: FC.Provider
 ): Promise<FC.Agent.Collection[]> {
   if (!agent.collections) return [];
 
@@ -65,7 +65,7 @@ export function onlyFutureEndAvailability(
   page: FC.Agent.Page
 ): FC.Agent.Page | null {
   const { availability } = page;
-  const { end } = availability || ({} as FC.Agent.Availability);
+  const { end } = availability || ({} as FC.Availability);
   const dtEnd = new Date(end);
 
   return dtIsAfter(new Date(Date.now()), dtEnd) ? null : page;
@@ -79,13 +79,11 @@ export function isValidPage(page?: FC.Agent.Page | null): boolean {
   );
 }
 
-type ScrapeProviderFn = (
-  provider: FC.Agent.Provider
-) => Promise<FC.Agent.Page[]>;
+type ScrapeProviderFn = (provider: FC.Provider) => Promise<FC.Agent.Page[]>;
 
 export function scrapeAgent(agent: FC.Agent.Agent): ScrapeProviderFn {
   return async function scrapeProvider(
-    vn: FC.Agent.Provider
+    vn: FC.Provider
   ): Promise<FC.Agent.Page[]> {
     const provider = refProvider(vn);
 

@@ -5,7 +5,7 @@ import schemas from '@filmcalendar/schemas';
 function normalizePages(
   agent: FC.Agent.Agent,
   data: FC.Agent.Page[]
-): FC.Agent.Dispatch {
+): FC.Dispatch.Dispatch {
   const { normalizr: schema } = schemas;
   const { type } = agent.register();
 

@@ -10,7 +10,7 @@ type Agents = Record<string, FC.Agent.Agent>;
 async function job(
   agentRef: string,
   agents: Agents
-): Promise<FC.Agent.Dispatch> {
+): Promise<FC.Dispatch.Dispatch> {
   const agentList = list(agents);
   const agent = agentList.get(agentRef);
   if (!agent) throw new Error(`job: agent ${agentRef} not found`);
