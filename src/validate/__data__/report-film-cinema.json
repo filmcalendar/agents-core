@@ -11,22 +11,22 @@
       }
     },
     "films": { "the-snowman": { "title": "The Snowman", "year": 1982 } },
-    "sessionAttributes": { "16mm": { "tag": "16mm" } },
+    "tags": { "16mm": { "tag": "16mm" } },
     "sessions": {
       "e400d63d6434175144e0722fd4529dd9": {
         "dateTime": "2020-12-22T19:00:00.000Z",
         "link": "https://thecastlecinema.com/bookings/3141033/",
-        "attributes": ["16mm"]
+        "tags": ["16mm"]
       },
       "2e4a1bc3f34a8267da050017b36efe91": {
         "dateTime": "2020-12-20T14:00:00.000Z",
         "link": "https://thecastlecinema.com/bookings/3141029/",
-        "attributes": ["16mm"]
+        "tags": ["16mm"]
       },
       "a8c19609c37de5981a14b2a54e6be3d6": {
         "dateTime": "2020-12-13T11:30:00.000Z",
         "link": "https://thecastlecinema.com/bookings/3141025/",
-        "attributes": ["16mm"]
+        "tags": ["16mm"]
       }
     },
     "seasons": {

@@ -11,7 +11,7 @@
     "films": {
       "adam-curtis": { "title": "Adam Curtis", "director": ["Adam Curtis"] }
     },
-    "sessionAttributes": {
+    "tags": {
       "audio-described": { "tag": "audio-described" },
       "sign-language": { "tag": "sign-language" }
     },
@@ -19,7 +19,7 @@
       "2ab84725df1b45313b533104efea9bde": {
         "start": "2020-12-09T16:33:40.194Z",
         "end": "2021-10-16T20:00:00.000Z",
-        "attributes": ["audio-described", "sign-language"]
+        "tags": ["audio-described", "sign-language"]
       }
     },
     "pages": {

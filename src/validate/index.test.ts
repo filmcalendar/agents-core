@@ -1,8 +1,8 @@
 import type * as FC from '@filmcalendar/types';
 
-import mockReportFilmCinema from '../__data__/report-film-cinema.json';
-import mockReportFilmLiveTv from '../__data__/report-film-live-tv.json';
-import mockReportFilmStreaming from '../__data__/report-film-streaming.json';
+import mockReportFilmCinema from './__data__/report-film-cinema.json';
+import mockReportFilmLiveTv from './__data__/report-film-live-tv.json';
+import mockReportFilmStreaming from './__data__/report-film-streaming.json';
 import validate from '.';
 
 const mockAgent = {

@@ -11,12 +11,12 @@
   "sessions": [
     {
       "dateTime": "2020-11-20T12:30:00.000Z",
-      "attributes": [],
+      "tags": [],
       "link": "https:/foo.com/buy/1"
     },
     {
       "dateTime": "2020-11-30T12:30:00.000Z",
-      "attributes": [],
+      "tags": [],
       "link": "https:/foo.com/buy/2"
     }
   ]

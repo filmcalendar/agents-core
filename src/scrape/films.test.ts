@@ -63,7 +63,7 @@ describe('cinema job', () => {
     expected.sessions = [
       {
         dateTime: '2020-11-30T12:30:00.000Z',
-        attributes: [],
+        tags: [],
         link: 'https:/foo.com/buy/2',
       },
     ];
