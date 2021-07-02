@@ -86,7 +86,8 @@
     "rules": {
       "jest/no-hooks": "off",
       "@typescript-eslint/comma-dangle": "off",
-      "no-underscore-dangle": "off"
+      "no-underscore-dangle": "off",
+      "jest/prefer-expect-assertions": "off"
     },
     "overrides": [
       {
