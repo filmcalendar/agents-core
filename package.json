@@ -7,7 +7,9 @@
   "license": "MIT",
   "keywords": [],
   "bin": {
-    "fc-agents-docker-run-local": "scripts/docker-run-local.sh"
+    "fc-agents-docker-build-local": "scripts/docker-build-local.sh",
+    "fc-agents-docker-run-local": "scripts/docker-run-local.sh",
+    "fc-agents-docker-run-prod": "scripts/docker-run-prod.sh"
   },
   "files": [
     "dist/index.js",

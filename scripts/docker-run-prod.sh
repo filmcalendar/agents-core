@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+# Runs a country level docker image (locally)
+
+set -o errexit
+
+echo "$FC_GIT_PASSWORD" | docker login ghcr.io --username "$FC_GIT_USER" --password-stdin
+
+docker pull "ghcr.io/filmcalendar/fc-agents-${FC_COUNTRY}:latest"
+
 docker run -i \
   --name "fc-agents-${FC_COUNTRY}" \
   --env FC_COUNTRY="${FC_COUNTRY}" \
@@ -11,4 +19,4 @@ docker run -i \
   --env FC_GIT_USER_NAME="${FC_GIT_USER_NAME}" \
   --env FC_GIT_USER="${FC_GIT_USER}" \
   --rm \
-    "local/filmcalendar/fc-agents-${FC_COUNTRY}:latest"
+    "ghcr.io/filmcalendar/fc-agents-${FC_COUNTRY}:latest"
