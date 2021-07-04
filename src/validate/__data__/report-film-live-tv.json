@@ -1,8 +1,7 @@
 {
   "entities": {
     "providers": {
-      "a0de8dfc8bcffb249e6a4f28e5b5e8de": {
-        "ref": "channel-4",
+      "channel-4": {
         "name": "Channel 4",
         "type": "live-tv",
         "url": "https://www.channel4.com/now/C4"
@@ -22,7 +21,7 @@
         "seasons": [],
         "films": ["split"],
         "isFeatured": false,
-        "provider": "a0de8dfc8bcffb249e6a4f28e5b5e8de",
+        "provider": "channel-4",
         "sessions": ["74c594d2f8a4a01d5f7ddc80a6c250ba"],
         "url": "https://www.channel4.com/tv-guide/2020/12/12/C4/30413225"
       }

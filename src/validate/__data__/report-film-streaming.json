@@ -1,11 +1,10 @@
 {
   "entities": {
     "providers": {
-      "e4ad079fd78d3fbfb9ed55d02f73fe58": {
+      "bbc-i-player": {
         "name": "BBC iPlayer",
         "type": "streaming",
-        "url": "https://www.bbc.co.uk/iplayer",
-        "ref": "bbc-i-player"
+        "url": "https://www.bbc.co.uk/iplayer"
       }
     },
     "films": {
@@ -26,7 +25,7 @@
       "10f98a28efddc871cdc624010020fc11": {
         "seasons": [],
         "url": "https://www.bbc.co.uk/iplayer/episode/p04b183c/adam-curtis-hypernormalisation",
-        "provider": "e4ad079fd78d3fbfb9ed55d02f73fe58",
+        "provider": "bbc-i-player",
         "films": ["adam-curtis"],
         "isFeatured": false,
         "availability": "2ab84725df1b45313b533104efea9bde"

@@ -324,10 +324,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@filmcalendar/schemas@1.12.0":
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/@filmcalendar/schemas/-/schemas-1.12.0.tgz#65b18ba6f162f2c0d354af960cbf512ad89a9967"
-  integrity sha512-Mp11qwhsBvlwB7wFKvdOoXcpUl4zDe5Z2xVUceMFTFeHYGzhcUEN8L09niT9zel5jlmTN93qRCRHwJVLi1KRDg==
+"@filmcalendar/schemas@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@filmcalendar/schemas/-/schemas-1.14.0.tgz#7d7db8fd28625a77a53120de8afab9b6616337fd"
+  integrity sha512-cuLrF+jW5E8/qlV2P3iPNeFjzdfPwIjj6++I8Yx8QEXg+n95qiEQG5bvg1ZX/VRLjaWdxTKuudDD5GhTcIxL/Q==
   dependencies:
     "@filmcalendar/types" "1.10.0"
     "@sindresorhus/slugify" "2.1.0"
