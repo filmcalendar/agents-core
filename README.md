@@ -1,4 +1,4 @@
-# agents-core
+# @filmcalendar/agents-core
 
 <p>
   <img src="https://img.shields.io/npm/v/@filmcalendar/agents-core">
@@ -22,9 +22,11 @@ import agents from "./agents"
 program(agents)
 ```
 
-| Script                       |                                            |
-| ---------------------------- | ------------------------------------------ |
-| `fc-agents-docker-run-local` | Run a country level docker image (locally) |
+| Script                         |                                                  |
+| ------------------------------ | ------------------------------------------------ |
+| `fc-agents-docker-build-local` | Build a country level docker image (locally)     |
+| `fc-agents-docker-run-local`   | Run a country level docker image (locally)       |
+| `fc-agents-docker-build-prod`  | Run a country level docker image (from registry) |
 
 ## Install
 
