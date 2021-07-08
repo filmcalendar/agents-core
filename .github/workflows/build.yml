@@ -9,12 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: actions/cache@v1
+      - uses: actions/setup-node@v2
         with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-      - run: yarn
-      - run: yarn validate
+          node-version: 16
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn lint
+      - run: yarn ts-check
       - run: yarn ci:test
 
   test-coverage:
@@ -26,10 +27,7 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: 16
-      - uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          cache: yarn
       - run: yarn install --frozen-lockfile
       - uses: paambaati/codeclimate-action@v2.7.2
         env:
@@ -43,15 +41,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: yarn
+          cache: yarn
+      - run: yarn install --frozen-lockfile
       - run: yarn build
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2

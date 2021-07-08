@@ -23,8 +23,8 @@
   "exports": "./dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@filmcalendar/schemas": "1.14.0",
-    "@filmcalendar/types": "1.10.0",
+    "@filmcalendar/schemas": "1.15.1",
+    "@filmcalendar/types": "1.11.0",
     "@tuplo/series-with": "1.6.1",
     "@tuplo/unhandler": "1.15.1",
     "ajv": "8.6.1",
@@ -37,12 +37,12 @@
     "yargs-parser": "20.2.9"
   },
   "devDependencies": {
-    "@types/jest": "26.0.23",
-    "@types/md5": "2.3.0",
-    "@types/node": "16.0.0",
-    "@typescript-eslint/eslint-plugin": "4.28.1",
-    "@typescript-eslint/parser": "4.28.1",
-    "esbuild": "0.12.14",
+    "@types/jest": "26.0.24",
+    "@types/md5": "2.3.1",
+    "@types/node": "16.0.1",
+    "@typescript-eslint/eslint-plugin": "4.28.2",
+    "@typescript-eslint/parser": "4.28.2",
+    "esbuild": "0.12.15",
     "eslint": "7.30.0",
     "eslint-config-airbnb-typescript": "12.3.1",
     "eslint-config-prettier": "8.3.0",
@@ -104,15 +104,15 @@
     ]
   },
   "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
     "transform": {
       "^.+\\.(t|j)sx?$": "ts-jest"
     },
     "moduleNameMapper": {
       "src/(.*)": "<rootDir>/src/$1"
-    },
-    "transformIgnorePatterns": [
-      "<roodDir>/node_modules/(?!@tuplo)"
-    ]
+    }
   },
   "prettier": {
     "singleQuote": true,
