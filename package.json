@@ -25,7 +25,6 @@
   "dependencies": {
     "@filmcalendar/schemas": "1.14.0",
     "@filmcalendar/types": "1.10.0",
-    "@sindresorhus/slugify": "2.1.0",
     "@tuplo/series-with": "1.6.1",
     "@tuplo/unhandler": "1.15.1",
     "ajv": "8.6.1",
@@ -34,6 +33,7 @@
     "date-fns": "2.22.1",
     "md5": "2.3.0",
     "normalizr": "3.6.1",
+    "slugify": "1.5.3",
     "yargs-parser": "20.2.9"
   },
   "devDependencies": {
@@ -104,12 +104,11 @@
     ]
   },
   "jest": {
-    "roots": [
-      "<rootDir>/src"
-    ],
-    "testEnvironment": "node",
     "transform": {
       "^.+\\.(t|j)sx?$": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "src/(.*)": "<rootDir>/src/$1"
     },
     "transformIgnorePatterns": [
       "<roodDir>/node_modules/(?!@tuplo)"

@@ -7,6 +7,6 @@ esbuild src/index.ts \
   --platform=node \
   --format=esm \
   --outfile=dist/index.js \
-  --external:@filmcalendar/schemas --external:@filmcalendar/types --external:@sindresorhus/slugify --external:@tuplo/series-with \
+  --external:@filmcalendar/schemas --external:@filmcalendar/types --external:@tuplo/series-with \
   --external:ajv --external:ajv-formats --external:clean-deep --external:date-fns \
   --external:md5 --external:normalizr --external:yargs-parser \

@@ -1,9 +1,9 @@
 import seriesWith from '@tuplo/series-with';
-import slugify from '@sindresorhus/slugify';
 import dtIsAfter from 'date-fns/isAfter';
 import cleanDeep from 'clean-deep';
 
 import type * as FC from '@filmcalendar/types';
+import slugify from 'src/helpers/slugify';
 
 export function refProvider(provider: FC.Provider): FC.Provider {
   return {
