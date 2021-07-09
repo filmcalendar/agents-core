@@ -7,3 +7,6 @@ esbuild src/index.ts \
   --platform=node \
   --format=esm \
   --outfile=dist/index.js
+
+cp src/agents-core.d.ts dist
+cp dist/agent/index.d.ts dist/agent.d.ts

@@ -13,7 +13,9 @@
   },
   "files": [
     "dist/index.js",
-    "dist/index.d.ts"
+    "dist/index.d.ts",
+    "dist/agents-core.d.ts",
+    "dist/agent.d.ts"
   ],
   "engines": {
     "node": ">=12"
@@ -62,9 +64,8 @@
     "ci:test": "jest --ci",
     "ci:test:coverage": "bash ./scripts/coverage.sh",
     "lint": "eslint --ext ts src",
-    "test": "jest --watch",
-    "ts-check": "tsc --noEmit",
-    "validate": "yarn lint; yarn ts-check"
+    "lint:ts": "tsc --noEmit",
+    "test": "jest --watch"
   },
   "eslintConfig": {
     "extends": [

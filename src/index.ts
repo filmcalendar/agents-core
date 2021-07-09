@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { unhandler } from '@tuplo/unhandler';
 
-import type { AgentsRecord } from 'src/@types/agents-core.d';
+import type { AgentsRecord } from './agents-core.d';
 
 import args from './args';
 import { serializeAgents } from './list';

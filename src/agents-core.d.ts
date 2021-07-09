@@ -1,4 +1,4 @@
-import { IAgent } from 'src/agent';
+import type { IAgent } from './agent';
 
 export type AgentsRecord = Record<string, IAgent>;
 

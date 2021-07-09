@@ -1,6 +1,6 @@
 import type * as FC from '@filmcalendar/types';
 
-import type { AgentsRecord } from 'src/@types/agents-core.d';
+import type { AgentsRecord } from './agents-core.d';
 
 import list from './list';
 import scrape from './scrape';

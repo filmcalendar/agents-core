@@ -1,4 +1,4 @@
-import type { AgentsRecord, AgentsMap } from 'src/@types/agents-core.d';
+import type { AgentsRecord, AgentsMap } from './agents-core.d';
 
 function listAgents(agents: AgentsRecord): AgentsMap {
   return Object.values(agents as AgentsRecord).reduce((acc, Agent) => {
