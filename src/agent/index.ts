@@ -2,6 +2,8 @@ import type * as FC from '@filmcalendar/types';
 import fletch from '@tuplo/fletch';
 import type { FletchInstance } from '@tuplo/fletch';
 
+import getRandomUserAgent from './user-agents';
+
 export interface IAgent {
   new (): Agent;
   init: () => Promise<void>;
@@ -18,7 +20,12 @@ class Agent {
   }
 
   async init(): Promise<void> {
-    this.request = fletch.create({ delay: 1_000 });
+    this.request = fletch.create({
+      headers: {
+        // TODO: when project more mature, change this to FC signature
+        'user-agent': getRandomUserAgent(),
+      },
+    });
   }
 
   register: FC.Agent.RegisterFn = () => ({} as FC.Agent.Registration);
