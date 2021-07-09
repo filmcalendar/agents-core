@@ -3,6 +3,7 @@ import fletch from '@tuplo/fletch';
 import type { FletchInstance } from '@tuplo/fletch';
 
 import getRandomUserAgent from './user-agents';
+import getProxy from './proxy';
 
 export interface IAgent {
   new (): Agent;
@@ -16,15 +17,18 @@ class Agent {
   request: FletchInstance;
 
   constructor() {
-    this.request = fletch.create({});
+    this.request = fletch.create();
   }
 
   async init(): Promise<void> {
+    const proxy = await getProxy();
+
     this.request = fletch.create({
       headers: {
         // TODO: when project more mature, change this to FC signature
         'user-agent': getRandomUserAgent(),
       },
+      proxy,
     });
   }
 
