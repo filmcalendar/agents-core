@@ -2,8 +2,10 @@ import { normalize } from 'normalizr';
 import type * as FC from '@filmcalendar/types';
 import schemas from '@filmcalendar/schemas';
 
+import type Agent from 'src/agent';
+
 function normalizePages(
-  agent: FC.Agent.Agent,
+  agent: Agent,
   data: FC.Agent.Page[]
 ): FC.Dispatch.Dispatch {
   const { normalizr: schema } = schemas;

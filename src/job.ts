@@ -1,19 +1,22 @@
 import type * as FC from '@filmcalendar/types';
 
+import type { AgentsRecord } from 'src/@types/agents-core.d';
+
 import list from './list';
 import scrape from './scrape';
 import normalize from './normalize';
 import validate from './validate';
 
-type Agents = Record<string, FC.Agent.Agent>;
-
 async function job(
   agentRef: string,
-  agents: Agents
+  agents: AgentsRecord
 ): Promise<FC.Dispatch.Dispatch> {
-  const agentList = list(agents);
-  const agent = agentList.get(agentRef);
-  if (!agent) throw new Error(`job: agent ${agentRef} not found`);
+  const agentsMap = list(agents);
+  const Agent = agentsMap.get(agentRef);
+  if (!Agent) throw new Error(`job: agent ${agentRef} not found`);
+
+  const agent = new Agent();
+  await agent.init();
 
   const pages = await scrape(agent);
   const data = normalize(agent, pages);

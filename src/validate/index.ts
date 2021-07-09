@@ -5,6 +5,8 @@ import schemas from '@filmcalendar/schemas';
 import type { ErrorObject, ValidateFunction } from 'ajv';
 import type * as FC from '@filmcalendar/types';
 
+import type Agent from 'src/agent';
+
 class ValidationError extends Error {
   public body: string;
 
@@ -16,7 +18,7 @@ class ValidationError extends Error {
 }
 
 function validateReport(
-  agent: FC.Agent.Agent,
+  agent: Agent,
   report: FC.Dispatch.Dispatch
 ): boolean | never {
   const { jsonSchema } = schemas;

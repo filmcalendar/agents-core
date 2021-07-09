@@ -4,6 +4,7 @@ import cleanDeep from 'clean-deep';
 
 import type * as FC from '@filmcalendar/types';
 import slugify from 'src/helpers/slugify';
+import type Agent from 'src/agent';
 
 export function refProvider(provider: FC.Provider): FC.Provider {
   return {
@@ -22,7 +23,7 @@ export function removeTemporaryAttributes(page: FC.Agent.Page): FC.Agent.Page {
 }
 
 async function getSeasons(
-  agent: FC.Agent.Agent,
+  agent: Agent,
   provider: FC.Provider
 ): Promise<FC.Season[]> {
   if (!agent.seasons) return [];
@@ -77,7 +78,7 @@ export function isValidPage(page?: FC.Agent.Page | null): boolean {
 
 type ScrapeProviderFn = (provider: FC.Provider) => Promise<FC.Agent.Page[]>;
 
-export function scrapeAgent(agent: FC.Agent.Agent): ScrapeProviderFn {
+export function scrapeAgent(agent: Agent): ScrapeProviderFn {
   return async function scrapeProvider(
     vn: FC.Provider
   ): Promise<FC.Agent.Page[]> {
@@ -110,7 +111,7 @@ export function scrapeAgent(agent: FC.Agent.Agent): ScrapeProviderFn {
   };
 }
 
-async function scrapeCinema(agent: FC.Agent.Agent): Promise<FC.Agent.Page[]> {
+async function scrapeCinema(agent: Agent): Promise<FC.Agent.Page[]> {
   const providers = await agent.providers();
 
   return seriesWith(providers, scrapeAgent(agent)).then((data) => data.flat());

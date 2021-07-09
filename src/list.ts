@@ -1,19 +1,16 @@
-import type * as FC from '@filmcalendar/types';
+import type { AgentsRecord, AgentsMap } from 'src/@types/agents-core.d';
 
-type Agents = Record<string, FC.Agent.Agent>;
-function listAgents(agents: Agents): Map<string, FC.Agent.Agent> {
-  return Object.values(agents as Record<string, FC.Agent.Agent>).reduce(
-    (acc, agent) => {
-      if (acc.has(agent.ref))
-        throw new Error(`Agents: duplicate agent ref - ${agent.ref}`);
-      acc.set(agent.ref, agent);
-      return acc;
-    },
-    new Map() as Map<string, FC.Agent.Agent>
-  );
+function listAgents(agents: AgentsRecord): AgentsMap {
+  return Object.values(agents as AgentsRecord).reduce((acc, Agent) => {
+    const agent = new Agent();
+    if (acc.has(agent.ref))
+      throw new Error(`Agents: duplicate agent ref - ${agent.ref}`);
+    acc.set(agent.ref, Agent);
+    return acc;
+  }, new Map() as AgentsMap);
 }
 
-export function serializeAgents(agents: Agents): string {
+export function serializeAgents(agents: AgentsRecord): string {
   const agentList = listAgents(agents);
 
   return [...agentList.keys()].join(',');

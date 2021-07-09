@@ -1,13 +1,14 @@
 /* eslint-disable no-console */
-import type * as FC from '@filmcalendar/types';
 import { unhandler } from '@tuplo/unhandler';
+
+import type { AgentsRecord } from 'src/@types/agents-core.d';
 
 import args from './args';
 import { serializeAgents } from './list';
 import job from './job';
+import AgentDef from './agent';
 
-type Agents = Record<string, FC.Agent.Agent>;
-async function program(agents: Agents): Promise<void> {
+async function program(agents: AgentsRecord): Promise<void> {
   const options = args(process.argv);
 
   process.env.TZ = 'utc';
@@ -40,3 +41,4 @@ async function program(agents: Agents): Promise<void> {
 }
 
 export default program;
+export { AgentDef as BaseAgent };

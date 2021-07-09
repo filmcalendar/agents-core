@@ -1,37 +1,39 @@
-import type * as FC from '@filmcalendar/types';
-
+/* eslint-disable max-classes-per-file */
+import BaseAgent from 'src/agent';
+import type { IAgent } from 'src/agent';
 import list, { serializeAgents } from './list';
 
-const mockAgent = {
-  register: (): FC.Agent.Registration => ({} as FC.Agent.Registration),
-  providers: async (): Promise<FC.Provider[]> => [],
-  featured: async (): Promise<string[]> => [],
-  programme: async (): Promise<FC.Agent.Programme> =>
-    ({} as FC.Agent.Programme),
-  page: async (): Promise<FC.Agent.Page> => ({} as FC.Agent.Page),
-};
+class A extends BaseAgent {
+  ref = 'ref-a';
+}
+class B extends BaseAgent {
+  ref = 'ref-b';
+}
+class C extends BaseAgent {
+  ref = 'ref-c';
+}
 
 describe('list agents', () => {
   it('list agents using ref field', () => {
     const agents = {
-      RefA: { ref: 'ref-a', ...mockAgent },
-      RefB: { ref: 'ref-b', ...mockAgent },
-    } as Record<string, FC.Agent.Agent>;
+      RefA: A as IAgent,
+      RefB: B as IAgent,
+    };
     const result = list(agents);
 
     const expected = new Map([
-      ['ref-a', { ref: 'ref-a', ...mockAgent }],
-      ['ref-b', { ref: 'ref-b', ...mockAgent }],
+      ['ref-a', A],
+      ['ref-b', B],
     ]);
     expect(result).toStrictEqual(expected);
   });
 
   it('throws an exception if it finds duplicate ref', () => {
     const agents = {
-      RefA: { ref: 'ref-a', ...mockAgent },
-      RefB: { ref: 'ref-b', ...mockAgent },
-      RefC: { ref: 'ref-a', ...mockAgent },
-    } as Record<string, FC.Agent.Agent>;
+      RefA: A as IAgent,
+      RefB: B as IAgent,
+      RefC: A as IAgent,
+    };
     const result = () => list(agents);
 
     const expected = new Error('Agents: duplicate agent ref - ref-a');
@@ -40,10 +42,10 @@ describe('list agents', () => {
 
   it("formats the agent's list to be printed on the command line", () => {
     const agents = {
-      RefA: { ref: 'ref-a', ...mockAgent },
-      RefB: { ref: 'ref-b', ...mockAgent },
-      RefC: { ref: 'ref-c', ...mockAgent },
-    } as Record<string, FC.Agent.Agent>;
+      RefA: A as IAgent,
+      RefB: B as IAgent,
+      RefC: C as IAgent,
+    };
     const result = serializeAgents(agents);
 
     const expected = 'ref-a,ref-b,ref-c';
