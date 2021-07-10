@@ -27,9 +27,9 @@
   "dependencies": {
     "@filmcalendar/schemas": "1.15.1",
     "@filmcalendar/types": "1.11.0",
-    "@tuplo/fletch": "1.18.0",
+    "@tuplo/fletch": "1.19.0",
     "@tuplo/series-with": "1.6.1",
-    "@tuplo/unhandler": "1.15.1",
+    "@tuplo/unhandler": "1.16.0",
     "ajv": "8.6.1",
     "ajv-formats": "2.1.0",
     "clean-deep": "3.4.0",
