@@ -31,7 +31,7 @@ async function job(
   await agent.init();
 
   const pages = await scrape(agent);
-  const data = normalize(agent, pages);
+  const { entities: data } = normalize(agent, pages);
   const isValid = await validate(agent, data);
 
   data.metadata = getMetadata({ agent: agentRef, timeStart, valid: isValid });

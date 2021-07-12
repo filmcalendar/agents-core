@@ -36,7 +36,7 @@ async function validateReport(
       isValid = validate(report);
   }
 
-  if (!isValid) {
+  if (process.env.NODE_ENV !== 'development' && !isValid) {
     const error = new ValidationError('Payload is not valid', validate.errors);
     await submitError(error, {
       appName: agentRef,

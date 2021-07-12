@@ -11,7 +11,7 @@
   <img src="https://github.com/filmcalendar/agents-core/workflows/Build/badge.svg">
 </p>
 
-> Agent's core engine - operation, normalization and validation
+> Agent's core engine - operation, normalization and validation.
 
 ## Usage
 
@@ -31,9 +31,6 @@ program(agents)
 ## Install
 
 ```bash
-$ npm install @filmcalendar/agents-core
-
-# or with yarn
 $ yarn add @filmcalendar/agents-core
 ```
 
@@ -43,4 +40,6 @@ Contributions are always welcome!
 
 ## License
 
-MIT
+&copy; 2021 Film Calendar
+
+Licensed under the [MIT License](LICENSE).

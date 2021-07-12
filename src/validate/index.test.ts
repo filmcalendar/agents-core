@@ -3,9 +3,9 @@ import type * as FC from '@filmcalendar/types';
 
 import BaseAgent from 'src/agent';
 
-import mockReportFilmCinema from './__data__/report-film-cinema.json';
-import mockReportFilmLiveTv from './__data__/report-film-live-tv.json';
-import mockReportFilmStreaming from './__data__/report-film-streaming.json';
+import mockDispatchFilmCinema from './__data__/dispatch-film-cinema.json';
+import mockReportFilmLiveTv from './__data__/dispatch-film-live-tv.json';
+import mockReportFilmStreaming from './__data__/dispatch-film-streaming.json';
 import validate from '.';
 
 class MockAgent extends BaseAgent {
@@ -19,7 +19,7 @@ describe('validate', () => {
   it('validates a cinema page', async () => {
     const result = await validate(
       agent,
-      mockReportFilmCinema as FC.Dispatch.Dispatch
+      mockDispatchFilmCinema as FC.Dispatch.Dispatch
     );
 
     expect(result).toBe(true);

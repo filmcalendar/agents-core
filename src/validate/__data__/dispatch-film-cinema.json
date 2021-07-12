@@ -1,0 +1,59 @@
+{
+  "providers": {
+    "the-castle-cinema": {
+      "name": "The Castle Cinema",
+      "url": "https://thecastlecinema.com",
+      "address": "First floor, 64-66 Brooksby's Walk, Hackney, London E9 6DA",
+      "email": "hello@thecastlecinema.com",
+      "type": "cinema"
+    }
+  },
+  "films": { "the-snowman": { "title": "The Snowman", "year": 1982 } },
+  "tags": { "16mm": { "tag": "16mm" } },
+  "sessions": {
+    "e400d63d6434175144e0722fd4529dd9": {
+      "dateTime": "2020-12-22T19:00:00.000Z",
+      "link": "https://thecastlecinema.com/bookings/3141033/",
+      "tags": ["16mm"]
+    },
+    "2e4a1bc3f34a8267da050017b36efe91": {
+      "dateTime": "2020-12-20T14:00:00.000Z",
+      "link": "https://thecastlecinema.com/bookings/3141029/",
+      "tags": ["16mm"]
+    },
+    "a8c19609c37de5981a14b2a54e6be3d6": {
+      "dateTime": "2020-12-13T11:30:00.000Z",
+      "link": "https://thecastlecinema.com/bookings/3141025/",
+      "tags": ["16mm"]
+    }
+  },
+  "seasons": {
+    "enchanted-castle": {
+      "name": "Enchanted Castle",
+      "description": "Winter fables, fairy tales and a feast of festive faves",
+      "image": "https://thecastlecinema.com/static/images/cms/snowman.jpg",
+      "url": "https://thecastlecinema.com/category/3141470/enchanted-castle/"
+    }
+  },
+  "pages": {
+    "06f05ef18176c67f1ef432208fb0fd3d": {
+      "url": "https://thecastlecinema.com/programme/2289750/cine-real-the-snowman/",
+      "provider": "the-castle-cinema",
+      "films": ["the-snowman"],
+      "sessions": [
+        "e400d63d6434175144e0722fd4529dd9",
+        "2e4a1bc3f34a8267da050017b36efe91",
+        "a8c19609c37de5981a14b2a54e6be3d6"
+      ],
+      "isFeatured": false,
+      "seasons": ["enchanted-castle"]
+    }
+  },
+  "metadata": {
+    "agent": "the-castle",
+    "timeStart": 1626112909928,
+    "valid": true,
+    "timeEnd": 1626112991766,
+    "memoryUsage": 65335296
+  }
+}
