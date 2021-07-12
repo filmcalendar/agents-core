@@ -1,6 +1,7 @@
 import AJV from 'ajv';
 import addFormats from 'ajv-formats';
 import schemas from '@filmcalendar/schemas';
+import { submitError } from '@tuplo/unhandler';
 
 import type { ErrorObject, ValidateFunction } from 'ajv';
 import type * as FC from '@filmcalendar/types';
@@ -17,14 +18,14 @@ class ValidationError extends Error {
   }
 }
 
-function validateReport(
+async function validateReport(
   agent: Agent,
   report: FC.Dispatch.Dispatch
-): boolean | never {
+): Promise<boolean> {
   const { jsonSchema } = schemas;
   const ajv = new AJV({ allErrors: true });
   addFormats(ajv);
-  const { type } = agent.register();
+  const { agent: agentRef, type } = agent.register();
 
   let isValid;
   let validate: ValidateFunction;
@@ -36,10 +37,20 @@ function validateReport(
   }
 
   if (!isValid) {
-    throw new ValidationError('Payload is not valid', validate.errors);
+    const error = new ValidationError('Payload is not valid', validate.errors);
+    await submitError(error, {
+      appName: agentRef,
+      providers: {
+        github: {
+          user: process.env.FC_GIT_USER as string,
+          repo: process.env.FC_GIT_REPO_SRC as string,
+          token: process.env.FC_GIT_PASSWORD as string,
+        },
+      },
+    });
   }
 
-  return true;
+  return Boolean(isValid);
 }
 
 export default validateReport;

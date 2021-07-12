@@ -16,8 +16,8 @@ class MockAgent extends BaseAgent {
 describe('validate', () => {
   const agent = new MockAgent();
 
-  it('validates a cinema page', () => {
-    const result = validate(
+  it('validates a cinema page', async () => {
+    const result = await validate(
       agent,
       mockReportFilmCinema as FC.Dispatch.Dispatch
     );
@@ -25,8 +25,8 @@ describe('validate', () => {
     expect(result).toBe(true);
   });
 
-  it('validates a live-tv page', () => {
-    const result = validate(
+  it('validates a live-tv page', async () => {
+    const result = await validate(
       agent,
       mockReportFilmLiveTv as FC.Dispatch.Dispatch
     );
@@ -34,8 +34,8 @@ describe('validate', () => {
     expect(result).toBe(true);
   });
 
-  it('validates a streaming page', () => {
-    const result = validate(
+  it('validates a streaming page', async () => {
+    const result = await validate(
       agent,
       mockReportFilmStreaming as FC.Dispatch.Dispatch
     );
