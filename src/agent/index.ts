@@ -29,6 +29,13 @@ class Agent {
         'user-agent': getRandomUserAgent(),
       },
       proxy,
+      retry: {
+        factor: 1,
+        maxTimeout: 60_000,
+        minTimeout: 60_000,
+        randomize: false,
+        retries: 2,
+      },
     });
   }
 
