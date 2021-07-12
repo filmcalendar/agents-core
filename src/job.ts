@@ -7,10 +7,22 @@ import scrape from './scrape';
 import normalize from './normalize';
 import validate from './validate';
 
+function getMetadata(
+  metadata: Partial<FC.Dispatch.Metadata>
+): FC.Dispatch.Metadata {
+  return {
+    ...metadata,
+    timeEnd: Date.now(),
+    memoryUsage: process.memoryUsage().rss,
+  } as FC.Dispatch.Metadata;
+}
+
 async function job(
   agentRef: string,
   agents: AgentsRecord
 ): Promise<FC.Dispatch.Dispatch> {
+  const timeStart = Date.now();
+
   const agentsMap = list(agents);
   const Agent = agentsMap.get(agentRef);
   if (!Agent) throw new Error(`job: agent ${agentRef} not found`);
@@ -21,6 +33,8 @@ async function job(
   const pages = await scrape(agent);
   const data = normalize(agent, pages);
   validate(agent, data);
+
+  data.metadata = getMetadata({ agent: agentRef, timeStart });
 
   return data;
 }
