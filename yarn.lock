@@ -324,13 +324,12 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@filmcalendar/schemas@1.17.0":
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/@filmcalendar/schemas/-/schemas-1.17.0.tgz#8a4bd6a35ed4eb00a5d845627b8a305989f944e4"
-  integrity sha512-p7zLWYOdlIKSXZzgr9K/Aycuyt4GMgRKLReSHMS6Cr1flAsqZltOnlEgAO8gDuWMarluZfCfF9OMpB5gustlPQ==
+"@filmcalendar/schemas@1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@filmcalendar/schemas/-/schemas-1.18.0.tgz#3011387f6893ca9af51eff2e9d636f3291493c0b"
+  integrity sha512-xoUkQIed20bpN/0qB/G1niNEbP3Sf0aLJJdnyzz8FIKbnyYvBH6NfliYv+YxmXKr6pabm2/L72AkevKcEYt1Vw==
   dependencies:
     "@filmcalendar/types" "1.13.0"
-    md5 "2.3.0"
     normalizr "3.6.1"
     slugify "1.5.3"
 

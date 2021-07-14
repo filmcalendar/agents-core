@@ -25,7 +25,7 @@
   "exports": "./dist/index.mjs",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@filmcalendar/schemas": "1.17.0",
+    "@filmcalendar/schemas": "1.18.0",
     "@filmcalendar/types": "1.13.0",
     "@tuplo/fletch": "1.20.0",
     "@tuplo/series-with": "1.6.1",
