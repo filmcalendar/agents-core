@@ -607,10 +607,10 @@
   resolved "https://registry.yarnpkg.com/@tuplo/series-with/-/series-with-1.6.1.tgz#89498aed16facd190b8f490f24c66cfbbb64c252"
   integrity sha512-OFOrlvFygqP3w4TIWQ9VZmY2S68u3cDpD5+WM6G74n+aMM8sXfh8voyGwzMp9JDa7hpAsJgC2fh1NQJvV3Hrsw==
 
-"@tuplo/unhandler@1.17.0":
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/@tuplo/unhandler/-/unhandler-1.17.0.tgz#9d6825eb0e3a5806fbf8a1100a5c07fa0cc8676c"
-  integrity sha512-DrnnmMLn73MQbhBsoUnwOZ/+Y208dNuXiB1kiqtjh+nTgC6t3ezNJm1KA9gk4qAuTAeyRd101EIkOnXlYG8+og==
+"@tuplo/unhandler@1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@tuplo/unhandler/-/unhandler-1.18.0.tgz#f6a54b00e32fb056c0e4640e1d629ad8aa48845d"
+  integrity sha512-RS8/hGv0v/tKxhPiO3YAgf3Bi+SlvOZBpdZlNMFXtvdOuayvoMegJwCm4uqCpb2eMaJiHmN9flwANjkzxfIZGg==
   dependencies:
     "@types/node-fetch" "2.5.11"
     node-fetch "2.6.1"
