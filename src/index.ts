@@ -18,9 +18,9 @@ async function program(agents: AgentsRecord): Promise<void> {
       appName: options.agent,
       providers: {
         github: {
-          user: process.env.FC_GIT_USER as string,
-          repo: process.env.FC_GIT_REPO_SRC as string,
-          token: process.env.FC_GIT_PASSWORD as string,
+          user: process.env.GIT_USER as string,
+          repo: process.env.GIT_REPO_SRC as string,
+          token: process.env.GIT_PASSWORD as string,
         },
       },
     });
