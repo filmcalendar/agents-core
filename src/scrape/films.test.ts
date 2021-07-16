@@ -106,8 +106,12 @@ describe('cinema job', () => {
   it('gets seasons for a page', () => {
     const result = getSeasonsForPage(mockSeasons)(mockPage);
 
-    expect(result.seasons).toHaveLength(2);
-    const [first] = result.seasons || [];
-    expect(first).toStrictEqual(mockSeasons[0]);
+    expect(result.seasons).toHaveLength(4);
+    const [firstSeason, , thirdSeason] = result.seasons || [];
+    expect(firstSeason).toStrictEqual(mockSeasons[0]);
+    expect(thirdSeason).toStrictEqual({
+      ref: 'festival-1',
+      name: 'Festival 1',
+    });
   });
 });

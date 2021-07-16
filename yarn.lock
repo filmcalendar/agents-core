@@ -324,19 +324,19 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@filmcalendar/schemas@1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@filmcalendar/schemas/-/schemas-1.18.0.tgz#3011387f6893ca9af51eff2e9d636f3291493c0b"
-  integrity sha512-xoUkQIed20bpN/0qB/G1niNEbP3Sf0aLJJdnyzz8FIKbnyYvBH6NfliYv+YxmXKr6pabm2/L72AkevKcEYt1Vw==
+"@filmcalendar/schemas@1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@filmcalendar/schemas/-/schemas-1.19.0.tgz#93b1b3323859593d88fad9ca8ad673b58cefd4b6"
+  integrity sha512-Co2qVa0w5qgfmoCoYLfvrNqiRktA2U0lxpmbsgVLbHEB9oTV+uL5cBdR//zdp79StpUqjWhz2dFwYnqOcWYuXw==
   dependencies:
-    "@filmcalendar/types" "1.13.0"
+    "@filmcalendar/types" "1.14.0"
     normalizr "3.6.1"
-    slugify "1.5.3"
+    slugify "1.6.0"
 
-"@filmcalendar/types@1.13.0":
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/@filmcalendar/types/-/types-1.13.0.tgz#38e8c5771b28ec7939455029eea2a6127b21cce9"
-  integrity sha512-Z6sM45PSmv/EE6ACWn5YcGKhFlLhzBwXmbe2V0Jr+6SSnhYwE7X/ZGWqK7JLfumz82P0Jh1ETQQSW1Q6iqWRTA==
+"@filmcalendar/types@1.14.0":
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@filmcalendar/types/-/types-1.14.0.tgz#ced68502b38e483b8d36d8424f613d5e5cd51691"
+  integrity sha512-B8ZhthlY9RTUwMxv1QAIrAAOj02FERnLqvKyxC8GseBwgtsNpdrdpDlehp6P9EiuHSCFEiJ9+4PpEqKYzCoE/Q==
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
@@ -716,10 +716,10 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@16.3.2":
-  version "16.3.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.2.tgz#655432817f83b51ac869c2d51dd8305fb8342e16"
-  integrity sha512-jJs9ErFLP403I+hMLGnqDRWT0RYKSvArxuBVh2veudHV7ifEC1WAmjJADacZ7mRbA2nWgHtn8xyECMAot0SkAw==
+"@types/node@*", "@types/node@16.3.3":
+  version "16.3.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.3.tgz#0c30adff37bbbc7a50eb9b58fae2a504d0d88038"
+  integrity sha512-8h7k1YgQKxKXWckzFCMfsIwn0Y61UK6tlD6y2lOb3hTOIMlK3t9/QwHOhc81TwU+RMf0As5fj7NPjroERCnejQ==
 
 "@types/prettier@^2.1.5":
   version "2.3.2"
@@ -879,10 +879,10 @@ ajv-formats@2.1.0:
   dependencies:
     ajv "^8.0.0"
 
-ajv@8.6.1, ajv@^8.0.0, ajv@^8.0.1:
-  version "8.6.1"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.6.1.tgz#ae65764bf1edde8cd861281cda5057852364a295"
-  integrity sha512-42VLtQUOLefAvKFAQIxIZDaThq6om/PrfP0CYk3/vn+y4BMNkKnbli8ON2QCiHov4KkzOSJ/xSoBJdayiiYvVQ==
+ajv@8.6.2, ajv@^8.0.0, ajv@^8.0.1:
+  version "8.6.2"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.6.2.tgz#2fb45e0e5fcbc0813326c1c3da535d1881bb0571"
+  integrity sha512-9807RlWAgT564wT+DjeyU5OFMPjmzxVobvDFmNAhY+5zD6A2ly3jDp6sgnfyDtlIQ+7H97oc/DGCzzfu9rjw9w==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
@@ -1220,9 +1220,9 @@ ci-info@^3.1.1:
   integrity sha512-dVqRX7fLUm8J6FgHJ418XuIgDLZDkYcDFTeL6TA2gt5WlIZUQrrH6EZrNClwT/H0FateUsZkGIOPRrLbP+PR9A==
 
 cjs-module-lexer@^1.0.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.1.tgz#2fd46d9906a126965aa541345c499aaa18e8cd73"
-  integrity sha512-jVamGdJPDeuQilKhvVn1h3knuMOZzr8QDnpk+M9aMlCaMkTDd6fBWPhiDqFvFZ07pL0liqabAiuy8SY4jGHeaw==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
+  integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
 clean-deep@3.4.0:
   version "3.4.0"
@@ -1524,9 +1524,9 @@ domutils@^2.5.2, domutils@^2.6.0, domutils@^2.7.0:
     domhandler "^4.2.0"
 
 electron-to-chromium@^1.3.723:
-  version "1.3.775"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.775.tgz#046517d1f2cea753e06fff549995b9dc45e20082"
-  integrity sha512-EGuiJW4yBPOTj2NtWGZcX93ZE8IGj33HJAx4d3ouE2zOfW2trbWU+t1e0yzLr1qQIw81++txbM3BH52QwSRE6Q==
+  version "1.3.779"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.779.tgz#de55492a756deec63424f89fbe62aec9776f0e6d"
+  integrity sha512-nreave0y/1Qhmo8XtO6C/LpawNyC6U26+q7d814/e+tIqUK073pM+4xW7WUXyqCRa5K4wdxHmNMBAi8ap9nEew==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -3683,10 +3683,10 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-slugify@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.5.3.tgz#36e009864f5476bfd5db681222643d92339c890d"
-  integrity sha512-/HkjRdwPY3yHJReXu38NiusZw2+LLE2SrhkWJtmlPDB1fqFSvioYj62NkPcrKiNCgRLeGcGK7QBvr1iQwybeXw==
+slugify@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.0.tgz#6bdf8ed01dabfdc46425b67e3320b698832ff893"
+  integrity sha512-FkMq+MQc5hzYgM86nLuHI98Acwi3p4wX+a5BO9Hhw4JdK4L7WueIiZ4tXEobImPqBz2sVcV0+Mu3GRB30IGang==
 
 source-map-support@^0.5.6:
   version "0.5.19"

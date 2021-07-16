@@ -41,13 +41,27 @@ async function getSeasons(
 }
 
 type GetSeasonsForPageFn = (page: FC.Agent.Page) => FC.Agent.Page;
-type GetSeasonsForPage = (seasons: FC.Season[]) => GetSeasonsForPageFn;
-export const getSeasonsForPage: GetSeasonsForPage = (seasons) => (page) => ({
-  ...page,
-  seasons: seasons.filter((season) =>
-    (season.programme || []).includes(page.url)
-  ),
-});
+export function getSeasonsForPage(seasons: FC.Season[]): GetSeasonsForPageFn {
+  return (page: FC.Agent.Page) => {
+    // seasons picked up by scraping the seasons pages
+    const agentSeasons = seasons.filter((season) =>
+      (season.programme || []).includes(page.url)
+    );
+
+    // seasons picked up by analyzing the page heading
+    // ex: The Film - London Film Festival
+    const { seasons: pageSeasonsNames = [] } = page;
+    const pageSeasons = pageSeasonsNames.map((pageSeasonName) => ({
+      ref: slugify(pageSeasonName as string),
+      name: pageSeasonName,
+    })) as FC.Season[];
+
+    return {
+      ...page,
+      seasons: [...agentSeasons, ...pageSeasons],
+    };
+  };
+}
 
 export function onlyFutureSessions(page: FC.Agent.Page): FC.Agent.Page {
   return {
@@ -91,14 +105,14 @@ export function scrapeAgent(agent: Agent): ScrapeProviderFn {
     const seasons = await getSeasons(agent, provider);
 
     const { programme, _data } = await agent.programme(provider);
-    const pages = await seriesWith(programme, async (url) => {
+    const pages = (await seriesWith(programme, async (url) => {
       if (process.env.NODE_ENV === 'development') {
         // eslint-disable-next-line
         console.log(url);
       }
 
       return agent.page(url, provider, _data);
-    }).then((results) => results.filter(Boolean) as FC.Agent.Page[]);
+    }).then((results) => results.filter(Boolean))) as FC.Agent.Page[];
 
     return pages
       .map((page) => ({ ...page, isFeatured: featured.includes(page.url) }))

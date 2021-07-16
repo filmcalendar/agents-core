@@ -19,5 +19,6 @@
       "tags": [],
       "link": "https:/foo.com/buy/2"
     }
-  ]
+  ],
+  "seasons": ["Festival 1", "Festival 2"]
 }
