@@ -7,9 +7,9 @@
   "license": "MIT",
   "keywords": [],
   "bin": {
-    "fc-agents-docker-build-local": "scripts/docker-build-local.sh",
-    "fc-agents-docker-run-local": "scripts/docker-run-local.sh",
-    "fc-agents-docker-run-prod": "scripts/docker-run-prod.sh"
+    "fc-agents-docker-build-local": "sh/docker-build-local.sh",
+    "fc-agents-docker-run-local": "sh/docker-run-local.sh",
+    "fc-agents-docker-run-prod": "sh/docker-run-prod.sh"
   },
   "files": [
     "dist/index.mjs",
@@ -47,7 +47,7 @@
     "@typescript-eslint/eslint-plugin": "4.28.3",
     "@typescript-eslint/parser": "4.28.3",
     "esbuild": "0.12.15",
-    "eslint": "7.30.0",
+    "eslint": "7.31.0",
     "eslint-config-airbnb-typescript": "12.3.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.23.4",
@@ -60,10 +60,10 @@
     "typescript": "4.3.5"
   },
   "scripts": {
-    "dev": "bash scripts/dev.sh",
-    "build": "bash scripts/build.sh",
+    "dev": "bash sh/dev.sh",
+    "build": "bash sh/build.sh",
     "ci:test": "jest --ci",
-    "ci:test:coverage": "bash ./scripts/coverage.sh",
+    "ci:test:coverage": "bash sh/coverage.sh",
     "lint": "eslint --ext ts src",
     "lint:ts": "tsc --noEmit",
     "test": "jest --watch"
@@ -90,10 +90,10 @@
       "jest": true
     },
     "rules": {
-      "jest/no-hooks": "off",
       "@typescript-eslint/comma-dangle": "off",
-      "no-underscore-dangle": "off",
-      "jest/prefer-expect-assertions": "off"
+      "jest/no-hooks": "off",
+      "jest/prefer-expect-assertions": "off",
+      "no-underscore-dangle": "off"
     },
     "overrides": [
       {

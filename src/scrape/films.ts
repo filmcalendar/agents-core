@@ -35,9 +35,13 @@ async function getSeasons(
       ? async () => ({} as FC.Season)
       : agent.season;
 
-  return seriesWith(seasonUrls, (url) =>
-    seasonFn(url, { _data: _seasonsData })
-  );
+  return seriesWith(seasonUrls, (url) => {
+    if (process.env.NODE_ENV === 'development') {
+      // eslint-disable-next-line
+      console.log(url);
+    }
+    return seasonFn(url, { _data: _seasonsData });
+  });
 }
 
 type GetSeasonsForPageFn = (page: FC.Agent.Page) => FC.Agent.Page;
@@ -110,7 +114,6 @@ export function scrapeAgent(agent: Agent): ScrapeProviderFn {
         // eslint-disable-next-line
         console.log(url);
       }
-
       return agent.page(url, provider, _data);
     }).then((results) => results.filter(Boolean))) as FC.Agent.Page[];
 
